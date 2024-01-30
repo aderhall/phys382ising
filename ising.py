@@ -213,19 +213,22 @@ def run_ising_lattice(inp, T_final, skip_print=False):
         # loop through the analyze section of generators
         E_avg = []
         M_avg = []
+        correlation_series = np.empty((inp['n_analyze'], int(np.floor(inp['N'] / 2 - 1))))
         for T, B, step in zip(T_generator, B_generator, range(inp['n_analyze'])):
             lattice.step(T,B)
             E_avg.append(lattice.get_E())
             M_avg.append(lattice.get_M())
+            correlation_series[step, :] = lattice.calc_auto_correlation()
             progress.check()
         progress.check(True)
-        spin_correlation = np.array(lattice.calc_auto_correlation())
+        correlation_final = lattice.calc_auto_correlation()
 
         lattice.free_memory()
         return (
             np.array(E_avg),
             np.array(M_avg),
-            np.array(spin_correlation)
+            correlation_final,
+            correlation_series.mean(axis=0),
         )
 
     except KeyboardInterrupt:
@@ -276,18 +279,21 @@ def get_filenames(inp): #make data folder if doesn't exist, then specify filenam
         # print('%s%s_SC_v%i.csv'%(prefix,t_name,v))
         v = 0
         while (os.path.isfile( os.path.join(dir_out, '%s%s_EM_v%i.csv'%(prefix,t_name,v))) or
-               os.path.isfile( os.path.join(dir_out, '%s%s_SC_v%i.csv'%(prefix,t_name,v)))):
+               os.path.isfile( os.path.join(dir_out, '%s%s_SC_v%i.csv'%(prefix,t_name,v))) or
+               os.path.isfile( os.path.join(dir_out, '%s%s_AC_v%i.csv'%(prefix,t_name,v)))):
             v += 1
 
         return ( os.path.join(dir_out, '%s%s_EM_v%i.csv'%(prefix,t_name,v)),
-                 os.path.join(dir_out, '%s%s_SC_v%i.csv'%(prefix,t_name,v)) )
+                 os.path.join(dir_out, '%s%s_SC_v%i.csv'%(prefix,t_name,v)),
+                 os.path.join(dir_out, '%s%s_AC_v%i.csv'%(prefix,t_name,v)) )
 
     except:
         print ('fatal: Failed to make output file names')
         sys.exit()
 
-def print_results(inp, data, corr):
-    data_filename, corr_filename = get_filenames(inp)
+def print_results(inp, data, corrfin, corravg):
+    # TODO: modify get_filenames
+    data_filename, corrfin_filename, corravg_filename = get_filenames(inp)
     with open(data_filename,'w') as f_out:
         writer = csv.writer(f_out, delimiter=',', lineterminator='\n')
         writer.writerow(['N', 'n_steps', 'n_analyze', 'flip_perc'])
@@ -299,13 +305,22 @@ def print_results(inp, data, corr):
         # for t, e_mean, e_std, m_mean, m_std in zip(T, E_mean, E_std, M_mean, M_std):
         #     writer.writerow([t, e_mean, e_std, m_mean, m_std])
 
-    with open(corr_filename,'w') as f_out:
+    with open(corrfin_filename,'w') as f_out:
         writer = csv.writer(f_out, delimiter=',', lineterminator='\n')
         writer.writerow(['N', 'n_steps', 'n_analyze', 'flip_perc'])
         writer.writerow([inp['N'], inp['n_steps'], inp['n_analyze'], inp['flip_perc']])
         writer.writerow([])
-        writer.writerow(['Temp']+['d=%i'%i for i in range(1,len(corr[0])+1)])
-        for entry in corr:
+        writer.writerow(['Temp']+['d=%i'%i for i in range(1,len(corrfin[0])+1)])
+        for entry in corrfin:
+            writer.writerow(entry)
+    
+    with open(corravg_filename,'w') as f_out:
+        writer = csv.writer(f_out, delimiter=',', lineterminator='\n')
+        writer.writerow(['N', 'n_steps', 'n_analyze', 'flip_perc'])
+        writer.writerow([inp['N'], inp['n_steps'], inp['n_analyze'], inp['flip_perc']])
+        writer.writerow([])
+        writer.writerow(['Temp']+['d=%i'%i for i in range(1,len(corravg[0])+1)])
+        for entry in corravg:
             writer.writerow(entry)
 
 
@@ -314,8 +329,8 @@ def run_indexed_process( inp, T, data_listener):
 #         temp, n, num_steps, num_burnin, num_analysis, flip_prop, j, b, data_filename, corr_filename, data_listener, corr_listener):
     print("Starting Temp {0}".format(round(T,3)))
     try:
-        E, M, C = run_ising_lattice(inp, T, skip_print=True)
-        data_listener.put(([T,E.mean(),E.std(), M.mean(), M.std()], [T,]+[x[1] for x in C]))
+        E, M, Cfin, Cavg = run_ising_lattice(inp, T, skip_print=True)
+        data_listener.put(([T,E.mean(),E.std(), M.mean(), M.std()], [T,]+[x for x in Cfin], [T,]+[x for x in Cavg]))
         # corr_listener.put([T,]+[x[1] for x in C])
         print("Finished Temp {0}".format(round(T,3)))
         return True
@@ -340,13 +355,15 @@ def listener(queue, inp, data):
         # print('message: ', message)
         if message == 'kill':
             data['data'].sort()
-            data['corr'].sort()
-            print_results(inp, data['data'], data['corr'])
+            data['corrfin'].sort()
+            data['corravg'].sort()
+            print_results(inp, data['data'], data['corrfin'], data['corravg'])
             print ('Closing listener')
             # print('killing')
             break
         data['data'].append(message[0])
-        data['corr'].append(message[1])
+        data['corrfin'].append(message[1])
+        data['corravg'].append(message[1])
         # print('--------\n',data)
 
 def make_T_array(inp):
@@ -368,7 +385,7 @@ def run_multi_core(inp):
 
 
     # arrays of results:
-    data = {'data':[], 'corr':[]}
+    data = {'data':[], 'corrfin':[], 'corravg':[]}
     # corr = []
 
     #put listener to work first
@@ -387,13 +404,15 @@ def run_single_core(inp):
     print("\n2D Ising Model Simulation; single core\n")
     # sequentially run through the desired temperatures and collect the output for each temperature
     data = []
-    corr = []
+    corrfin = []
+    corravg = []
     for temp in make_T_array(inp):
-        E, M, C = run_ising_lattice(inp, temp, skip_print=inp['skip_prog_print'])
+        E, M, Cfin, Cavg = run_ising_lattice(inp, temp, skip_print=inp['skip_prog_print'])
         data.append( (temp, E.mean(), E.std(), M.mean(), M.std() ) )
-        corr.append([temp,]+[x[1] for x in C])
+        corrfin.append([temp,]+[x for x in Cfin])
+        corravg.append([temp,]+[x for x in Cavg])
 
-    print_results(inp, data, corr)
+    print_results(inp, data, corrfin, corravg)
 
     if inp['plots']:
         plot_graphs(data)
