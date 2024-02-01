@@ -220,7 +220,12 @@ def run_ising_lattice(inp, T_final, skip_print=False):
             progress.check()
         progress.check(True)
         spin_correlation = np.array(lattice.calc_auto_correlation())
-
+        
+        # Take a snapshot of the lattice immediately after the simulation
+        final_snapshot = lattice.get_numpy_spin_matrix()
+        # Write the final snapshot to a numpy file
+        np.save(f'snapshots/T{T_final}.npy', final_snapshot)
+        
         lattice.free_memory()
         return (
             np.array(E_avg),

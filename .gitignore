@@ -4,5 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 *.dll
-data*
+data/
+snapshots/
 ising_lattice_lib\.so
