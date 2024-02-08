@@ -26,9 +26,27 @@ def make_B_generator(inp, t_final=None):
     """Return a generator that makes values of B (magetic field in each step)
     note: you *should* play with this function
     
-    default implementation: always return 0
+    COMMENTED OUT: default implementation: always return 0
+    ADRIAN says: start at inp['b_top'] and linearly decrease to inp['B'] over n_slope steps
+        then, hold at inp['B'] for n_burnin steps + n_analyze steps
     """
-    for val in range(inp['n_steps']):
+    #for val in range(inp['n_steps']):
+    #    yield inp['B']
+        
+    n_slope = inp['n_steps'] - inp['n_burnin'] - inp['n_analyze']
+    if n_slope < 0:
+        print('fatal error: n_steps - n_burnin - n_slope < 0')
+        print('terminating program')
+        exit(2)
+    
+    # get linearly decreasing values from b_top to b_final
+    for val in np.linspace(start=inp['b_top'], stop=inp['B'], num=n_slope):
+        yield val
+        
+    for val in range(inp['n_burnin']):
+        yield inp['B']
+        
+    for val in range(inp['n_analyze']):
         yield inp['B']
 
 def make_T_generator(inp, t_final):
@@ -73,12 +91,13 @@ def set_input(cmd_line_args):
     inp['t_max']      = 5.0    # maximum temperature
     inp['t_step']     = 0.01    # step size from min to max temperature
     inp['t_top']      = 4.0    # start temperature (arbitrary; feel free to change)
+    inp['b_top']      = 5.0    # start magnetic field (arbitrary)
     inp['N']          = 10     # sqrt(lattice size) (i.e. lattice = N^2 points
     inp['n_steps']    = 10000  # number of lattice steps in simulation
     inp['n_burnin']   = 2000   # optional parameter, used as naive default
     inp['n_analyze']  = 5000   # number of lattice steps at end of simulation calculated for averages and std.dev.
     # inp['J']          = 1.0    # **great** default value -- spin-spin interaction strength
-    inp['B']          = 0.0    # magnetic field strength
+    inp['B']          = 0.0    # FINAL magnetic field strength (AFTER burnin)
     inp['flip_perc']  = 0.1    # ratio of sites examined to flip in each step
     inp['dir_out']    = 'data' # output directory for file output
     inp['plots']      = False  # whether or not plots are generated
