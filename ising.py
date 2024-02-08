@@ -69,9 +69,9 @@ def set_input(cmd_line_args):
     """
 
     inp = dict()
-    inp['t_min']      = 1.6    # minimum temperature
-    inp['t_max']      = 3.6    # maximum temperature
-    inp['t_step']     = 0.1    # step size from min to max temperature
+    inp['t_min']      = 0.0    # minimum temperature
+    inp['t_max']      = 5.0    # maximum temperature
+    inp['t_step']     = 0.01    # step size from min to max temperature
     inp['t_top']      = 4.0    # start temperature (arbitrary; feel free to change)
     inp['N']          = 10     # sqrt(lattice size) (i.e. lattice = N^2 points
     inp['n_steps']    = 10000  # number of lattice steps in simulation
