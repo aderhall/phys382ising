@@ -30,24 +30,25 @@ def make_B_generator(inp, t_final=None):
     ADRIAN says: start at inp['b_top'] and linearly decrease to inp['B'] over n_slope steps
         then, hold at inp['B'] for n_burnin steps + n_analyze steps
     """
-    #for val in range(inp['n_steps']):
-    #    yield inp['B']
+    if inp['b_top'] == 0:
+        for val in range(inp['n_steps']):
+            yield inp['B']
+    else:
+        n_slope = inp['n_steps'] - inp['n_burnin'] - inp['n_analyze']
+        if n_slope < 0:
+            print('fatal error: n_steps - n_burnin - n_slope < 0')
+            print('terminating program')
+            exit(2)
         
-    n_slope = inp['n_steps'] - inp['n_burnin'] - inp['n_analyze']
-    if n_slope < 0:
-        print('fatal error: n_steps - n_burnin - n_slope < 0')
-        print('terminating program')
-        exit(2)
-    
-    # get linearly decreasing values from b_top to b_final
-    for val in np.linspace(start=inp['b_top'], stop=inp['B'], num=n_slope):
-        yield val
-        
-    for val in range(inp['n_burnin']):
-        yield inp['B']
-        
-    for val in range(inp['n_analyze']):
-        yield inp['B']
+        # get linearly decreasing values from b_top to b_final
+        for val in np.linspace(start=inp['b_top'], stop=inp['B'], num=n_slope):
+            yield val
+            
+        for val in range(inp['n_burnin']):
+            yield inp['B']
+            
+        for val in range(inp['n_analyze']):
+            yield inp['B']
 
 def make_T_generator(inp, t_final):
     """Return a generator that makes values of T (temperature in each step)
