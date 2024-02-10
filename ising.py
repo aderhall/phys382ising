@@ -26,9 +26,27 @@ def make_B_generator(inp, t_final=None):
     """Return a generator that makes values of B (magetic field in each step)
     note: you *should* play with this function
     
-    default implementation: always return 0
+    COMMENTED OUT: default implementation: always return 0
+    ADRIAN says: start at inp['b_top'] and linearly decrease to inp['B'] over n_slope steps
+        then, hold at inp['B'] for n_burnin steps + n_analyze steps
     """
-    for val in range(inp['n_steps']):
+    #for val in range(inp['n_steps']):
+    #    yield inp['B']
+        
+    n_slope = inp['n_steps'] - inp['n_burnin'] - inp['n_analyze']
+    if n_slope < 0:
+        print('fatal error: n_steps - n_burnin - n_slope < 0')
+        print('terminating program')
+        exit(2)
+    
+    # get linearly decreasing values from b_top to b_final
+    for val in np.linspace(start=inp['b_top'], stop=inp['B'], num=n_slope):
+        yield val
+        
+    for val in range(inp['n_burnin']):
+        yield inp['B']
+        
+    for val in range(inp['n_analyze']):
         yield inp['B']
 
 def make_T_generator(inp, t_final):
@@ -40,6 +58,8 @@ def make_T_generator(inp, t_final):
         hold at t_final for n_burnin
         hold at t_final for n_analyze
     """
+    # DEBUG []
+    # counter = 0
     n_slope = inp['n_steps'] - inp['n_burnin'] - inp['n_analyze']
     if n_slope < 0:
         print('fatal error: n_steps - n_burnin - n_slope < 0')
@@ -48,13 +68,17 @@ def make_T_generator(inp, t_final):
 
     # get linearly decreasing values from t_top to t_final
     for val in np.linspace(start=inp['t_top'], stop=t_final, num=n_slope):
+        # counter +=1
         yield val
 
     for val in range(inp['n_burnin']):
+        # counter +=1
         yield t_final
 
     for val in range(inp['n_analyze']):
+        # counter +=1
         yield t_final
+    # print("t_gen: ", counter)
 
 def set_input(cmd_line_args):
     """Parse command-line parameters into an input dictionary.
@@ -73,6 +97,7 @@ def set_input(cmd_line_args):
     inp['t_max']      = 3.6    # maximum temperature
     inp['t_step']     = 0.1    # step size from min to max temperature
     inp['t_top']      = 4.0    # start temperature (arbitrary; feel free to change)
+    inp['b_top']      = 5.0    # start magnetic field (arbitrary)
     inp['N']          = 10     # sqrt(lattice size) (i.e. lattice = N^2 points
     inp['n_steps']    = 10000  # number of lattice steps in simulation
     inp['n_burnin']   = 2000   # optional parameter, used as naive default
@@ -203,24 +228,37 @@ def run_ising_lattice(inp, T_final, skip_print=False):
         T_generator = make_T_generator(inp, T_final)
         B_generator = make_B_generator(inp, T_final)
         n_prior = inp['n_steps'] - inp['n_analyze']
+        E_series = np.ndarray(inp['n_steps'] - 1) # see note above n_analyze loop
+        M_series = np.ndarray(inp['n_steps'] - 1)
 
         progress = check_progress(inp, T_final, skip_print)
 
         for T, B, step in zip(T_generator, B_generator, range(n_prior)):
             lattice.step(T,B)
+            E_series[step] = lattice.get_E()
+            M_series[step] = lattice.get_M()
             progress.check()
 
         # loop through the analyze section of generators
         E_avg = []
         M_avg = []
+        # this loop inexplicably runs (n_analyze - 1) times
+        # counter = 0
         for T, B, step in zip(T_generator, B_generator, range(inp['n_analyze'])):
             lattice.step(T,B)
             E_avg.append(lattice.get_E())
             M_avg.append(lattice.get_M())
+            # counter+=1
             progress.check()
         progress.check(True)
+        # print("temp", T_final, ". n_analyze? :", counter)
+        # print(inp['n_analyze'])
         spin_correlation = np.array(lattice.calc_auto_correlation())
-        
+        E_avg = np.array(E_avg)
+        M_avg = np.array(M_avg)
+        E_series[n_prior:] = E_avg
+        M_series[n_prior:] = M_avg
+
         # Take a snapshot of the lattice immediately after the simulation
         final_snapshot = lattice.get_numpy_spin_matrix()
         # Write the final snapshot to a numpy file
@@ -228,8 +266,10 @@ def run_ising_lattice(inp, T_final, skip_print=False):
         
         lattice.free_memory()
         return (
-            np.array(E_avg),
-            np.array(M_avg),
+            E_avg,
+            M_avg,
+            E_series,
+            M_series,
             np.array(spin_correlation)
         )
 
@@ -313,14 +353,16 @@ def print_results(inp, data, corr):
         for entry in corr:
             writer.writerow(entry)
 
+# Alex's Edits: added functionality for "time" series data, saved to 'series/Etemp.npy' and 'series/Mtemp.npy' 
+# May not work on multicore: unsure if this is a software issue (likely) or a hardware issue (also very possible)
 
 def run_indexed_process( inp, T, data_listener):
 # def run_simulation(
 #         temp, n, num_steps, num_burnin, num_analysis, flip_prop, j, b, data_filename, corr_filename, data_listener, corr_listener):
     print("Starting Temp {0}".format(round(T,3)))
     try:
-        E, M, C = run_ising_lattice(inp, T, skip_print=True)
-        data_listener.put(([T,E.mean(),E.std(), M.mean(), M.std()], [T,]+[x[1] for x in C]))
+        E, M, ET, MT, C = run_ising_lattice(inp, T, skip_print=True)
+        data_listener.put(([T,E.mean(),E.std(), M.mean(), M.std()], [T,]+[x[1] for x in C], [T,]+ET, [T,]+MT))
         # corr_listener.put([T,]+[x[1] for x in C])
         print("Finished Temp {0}".format(round(T,3)))
         return True
@@ -346,12 +388,19 @@ def listener(queue, inp, data):
         if message == 'kill':
             data['data'].sort()
             data['corr'].sort()
+            data['E_series'].sort()
+            data['M_series'].sort()
+            print("data len: ", len(data['data']))
             print_results(inp, data['data'], data['corr'])
+            np.save('series/E_series.npy', np.array(data['E_series']))
+            np.save("series/M_series.npy", np.array(data['M_series']))
             print ('Closing listener')
             # print('killing')
             break
         data['data'].append(message[0])
         data['corr'].append(message[1])
+        data['E_series'].append(message[2])
+        data['M_series'].append(message[3])
         # print('--------\n',data)
 
 def make_T_array(inp):
@@ -373,7 +422,7 @@ def run_multi_core(inp):
 
 
     # arrays of results:
-    data = {'data':[], 'corr':[]}
+    data = {'data':[], 'corr':[], 'E_series':[], 'M_series':[]}
     # corr = []
 
     #put listener to work first
@@ -393,12 +442,22 @@ def run_single_core(inp):
     # sequentially run through the desired temperatures and collect the output for each temperature
     data = []
     corr = []
-    for temp in make_T_array(inp):
-        E, M, C = run_ising_lattice(inp, temp, skip_print=inp['skip_prog_print'])
+    # Modification: we want convergence data, which means individual E and M data over time
+    T_array = make_T_array(inp)
+    E_time_data = np.ndarray((T_array.size, inp['n_steps']))
+    M_time_data = np.ndarray((T_array.size, inp['n_steps']))
+    for i, temp in enumerate(T_array):
+        E, M, ET, MT, C = run_ising_lattice(inp, temp, skip_print=inp['skip_prog_print'])
         data.append( (temp, E.mean(), E.std(), M.mean(), M.std() ) )
         corr.append([temp,]+[x[1] for x in C])
+        E_time_data[i][0] = temp
+        M_time_data[i][0] = temp
+        E_time_data[i][1:] = ET
+        M_time_data[i][1:] = MT
 
     print_results(inp, data, corr)
+    np.save('series/E_series.npy', E_time_data)
+    np.save("series/M_series.npy", M_time_data)
 
     if inp['plots']:
         plot_graphs(data)
