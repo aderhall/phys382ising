@@ -88,11 +88,11 @@ def set_input(cmd_line_args):
     """
 
     inp = dict()
-    inp['t_min']      = 0.0    # minimum temperature
-    inp['t_max']      = 5.0    # maximum temperature
+    inp['t_min']      = 1.0    # minimum temperature
+    inp['t_max']      = 4.0    # maximum temperature
     inp['t_step']     = 0.01    # step size from min to max temperature
     inp['t_top']      = 4.0    # start temperature (arbitrary; feel free to change)
-    inp['b_top']      = 5.0    # start magnetic field (arbitrary)
+    inp['b_top']      = 0.5    # start magnetic field (arbitrary)
     inp['N']          = 10     # sqrt(lattice size) (i.e. lattice = N^2 points
     inp['n_steps']    = 10000  # number of lattice steps in simulation
     inp['n_burnin']   = 2000   # optional parameter, used as naive default
@@ -242,9 +242,9 @@ def run_ising_lattice(inp, T_final, skip_print=False):
         spin_correlation = np.array(lattice.calc_auto_correlation())
         
         # Take a snapshot of the lattice immediately after the simulation
-        final_snapshot = lattice.get_numpy_spin_matrix()
+        #final_snapshot = lattice.get_numpy_spin_matrix()
         # Write the final snapshot to a numpy file
-        np.save(f'snapshots/T{T_final}.npy', final_snapshot)
+        #np.save(f'snapshots/T{T_final}.npy', final_snapshot)
         
         lattice.free_memory()
         return (
