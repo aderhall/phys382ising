@@ -11,6 +11,7 @@ class SimParams(object):
         self.t_min = t_min
         self.t_max = t_max
         self.t_step = t_step
+
     def __str__(self):
         return f"\n\tn:{self.n}\n\tn_steps:{self.n_steps}\n\tmultiprocess:{self.multiprocess}\n\tb_top:{self.b_top}\n\tt_min:{self.t_min}\n\tt_max:{self.t_max}\n\tt_step:{self.t_step}"
 
@@ -45,11 +46,11 @@ def new_test(test_path):
     os.system(f"mkdir -p {test_path}/snapshots")
     os.system(f"mkdir -p {test_path}/plots")
 
-data_tests = "../data_tests"
+data_tests = "../../data_tests"
 test_name = "fit-observables/many-runs-trial-3-fixN"
 test_path = f"{data_tests}/{test_name}"
-n_trials = 10 # How many times to run the simulation per temperature
-params = SimParams(n = 100, n_steps=100000, b_top = 0.5, multiprocess = True, t_min = 1.6, t_max = 3.6, t_step = 0.02)
+n_trials = 100 # How many times to run the simulation per temperature
+params = SimParams(n = 100, n_steps=200000, b_top = 0.5, multiprocess = True, t_min = 1.6, t_max = 3.6, t_step = 0.02)
 
 if True:
     #rerun(test_path)
