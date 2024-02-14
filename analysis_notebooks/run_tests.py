@@ -45,7 +45,7 @@ def new_test(test_path):
     os.system(f"mkdir -p {test_path}/snapshots")
     os.system(f"mkdir -p {test_path}/plots")
 
-data_tests = "../../data_tests"
+data_tests = "../data_tests"
 test_name = "fit-observables/many-runs-trial-3-fixN"
 test_path = f"{data_tests}/{test_name}"
 n_trials = 10 # How many times to run the simulation per temperature
