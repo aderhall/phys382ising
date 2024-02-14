@@ -1,0 +1,10 @@
+n_trials: 100
+snapshots taken: False
+params: 
+	n:100
+	n_steps:200000
+	multiprocess:True
+	b_top:0.5
+	t_min:1.6
+	t_max:3.6
+	t_step:0.02
