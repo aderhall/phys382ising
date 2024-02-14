@@ -1,0 +1,100 @@
+\RequirePackage[2020-02-02]{latexrelease}
+\documentclass[letter,scriptaddress,twocolumn, prl]{revtex4}
+
+\usepackage{amsmath}%,amssymb} 
+\usepackage{makeidx}
+\usepackage{amsfonts}
+\usepackage[ansinew]{inputenc}
+%\usepackage[usenames,dvipsnames]{pstricks}
+%\usepackage{subfigure}
+\usepackage{epsfig}
+%\usepackage{pst-grad} % For gradients
+%\usepackage{pst-plot} % For axes
+\usepackage[colorlinks,hyperindex]{hyperref}
+\hypersetup
+{
+colorlinks,%
+citecolor=black,%
+linkcolor=black,%
+urlcolor=black,%
+}
+
+\setlength\textheight{24.5cm}
+
+% --- Comandos novos ---
+\newcommand{\dket}[1]{\left| #1 \right)}
+\newcommand{\E}[1]{\frac{\hbar^2 #1 ^2}{2m_0}}
+\newcommand{\dbra}[1]{\left( #1 \right|}
+\newcommand{\dsubmin}[1]{\left( #1 \right)}
+\newcommand{\dbraket}[2]{\left( #1 | #2 \right)}
+\newcommand{\dbraketm}[3]{\left( #1 \left| #2 \right| #3 \right)}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\submin}[1]{\left\langle #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle #1 \right. \left| #2 \right\rangle}
+\newcommand{\braketm}[3]{\langle #1 \mid #2 \mid #3 \rangle}
+\newcommand{\pinterno}[2]{\left( #1 , #2 \right)}
+\newcommand{\comut}[2]{\left[ #1 , #2 \right]} % THE COMUTATOR
+\newcommand{\seitz}[2]{\left\{ \, #1 \mid  #2 \, \right\}}
+\newcommand{\rep}{\emph{rep} }
+\newcommand{\irep}{\emph{irrep} }
+\newcommand{\ordem}[1]{\mid #1 \mid}
+\newcommand{\op}[1]{\mathbb #1 }
+\newcommand{\group}[1]{\mathcal #1 }
+\newcommand{\vet}[1]{\mathbf #1 }
+\newcommand{\argu}[1]{\left( #1 \right)}
+\newcommand{\kp}{\vet{k}\cdot\vet{p}}
+
+\makeindex
+
+%--------------------------------------------------------
+\begin{document}
+
+\title{A brief and concise description of RevTeX 4 package}
+
+\author{Alex Roseman}
+\author{Adrian Hall}
+\date{today}
+
+\begin{abstract}
+
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{equation}
+	\label{eq:test}
+	\vec{f} = m \vec{a} .
+\end{equation}
+So, equation \eqref{eq:test} or \ref{eq:test} must be solved for position function so one can know everything about the system. But how to solve this. Here, $\vec{f}$ is a sum over all the forces acting on this particle, $\sum\limits_{\forall i} f_i$.
+%In my books.bib, I have an entry named goldstein80 wich refers to Classical Mechanics by Goldstein. The same for greene1995.
+
+% Fig.\,\ref{fig:example}.
+
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]{exampleFig} %depending on the latex compiler, you can omit the file extension
+%		\caption{Include your caption here.}
+%		\label{fig:example}
+%	\end{center}
+%\end{figure}
+
+\section{Acknowledgements}
+	Prof. Navon, Prof. Newburgh, HongJoon
+
+%\bibliographystyle{unsrt} 
+%\bibliography{/home/thiago/bibtex/articles,/home/thiago/bibtex/books}
+
+\begin{thebibliography}{}
+	
+	\bibitem{mcdermott}
+	Y.-F.~Chen {\it et al.},
+	%``Microwave Photon Counter Based on Josephson Junctions,''
+	Phys.\ Rev.\ Lett.\  {\bf 107}, 217401 (2011).
+	
+	
+\end{thebibliography}
+
+\end{document}
