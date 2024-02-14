@@ -1,3 +1,5 @@
+Pipfile
+.venv/
 __pycache__/
 *.pyc
 *.csv#

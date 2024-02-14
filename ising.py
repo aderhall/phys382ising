@@ -6,7 +6,7 @@ import logging
 # import click
 import numpy as np
 # import logging
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import multiprocessing as mp
 # from IsingLattice import IsingLattice as IsingLattice_c
 from sys import exit, argv
