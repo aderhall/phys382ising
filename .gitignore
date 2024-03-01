@@ -9,3 +9,7 @@ __pycache__/
 data/
 snapshots/
 ising_lattice_lib\.so
+final_report/*.*
+draft_report/*.*
+!final_report/*.tex
+!draft_report/*.tex
