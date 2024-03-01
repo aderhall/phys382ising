@@ -75,19 +75,31 @@ urlcolor=black,%
 \begin{equation}
 	H = -J \sum_{\langle i, j \rangle} \sigma_i \sigma_j - B \sum_i \sigma_i
 \end{equation}
-where $\sigma_i$ is the magnetic moment at lattice site $i$, $J$ is the interaction energy, $B$ is the magnetic field strength, and $\langle i, j \rangle$ denotes all pairs of neighboring lattice sites.
-Onsager's analytical solution for rectangular lattices \cite{Onsager} describes the equilibrium behavior of the model as a function of $J$ and $B$ as well as the temperature $T$. An interesting feature is that on a lattice that is infinite in two dimensions, the model exhibits a phase transition at the critical temperature $T_c$, where the equilibrium state of the model is discontinuous with respect to temperature. Qualitatively, for $T > T_c$ the lattice is highly disordered, while for $T < T_c$ the spin states correlate significantly with others nearby (\autoref{fig:fig1}).
-The model's behavior at temperatures near $T_c$ has been the subject of extensive study.
-
-\begin{equation}
-	\label{eq:hamiltonian}
-	H = -J \sum_{\left\langle i, j \right\rangle}\sigma_i\sigma_j - B \sum_i\sigma_i
-\end{equation}
-
+where $\sigma_i$ is the magnetic moment at lattice site $i$, $J$ is the interaction energy, $B$ is the magnetic field strength, and $\langle i, j \rangle$ denotes all pairs of neighboring lattice sites.\\
+Onsager's analytical solution for rectangular lattices \cite{Onsager} describes the equilibrium behavior of the model as a function of $J$ and $B$ as well as the temperature $T$. An interesting feature is that on a lattice that is infinite in two dimensions, the model exhibits a phase transition at the critical temperature $T_c$, given by
 \begin{equation}
 	\label{eq:Tc}
-	T_c = \frac{2}{\ln{(1+\sqrt{2})}} \approx 2.269 (J/k_B)
+	\frac{k_B T_c}{J} = \frac{2}{\ln{(1+\sqrt{2})}} \approx 2.269
 \end{equation}
+where $k_B$ is Boltzmann's constant. At $T_c$ the equilibrium state of the model is discontinuous with respect to temperature. Qualitatively, for $T > T_c$ the lattice is highly disordered, while for $T < T_c$ the spin states correlate significantly with others nearby (\autoref{fig:fig1}).\\
+The model's behavior at temperatures near $T_c$ has been the subject of extensive study. As the temperature approaches $T_c$, several observable quantities vary according to power laws in the reduced temperature $\tau = \frac{|T - T_c|}{T_c}$. Among these are specific heat $C_v$, magnetization (order parameter) $M$, magnetic susceptibility $\chi$, and correlation length $\xi$. These power laws, and their corresponding exponents (the critical exponents) are not specific to a particular Ising lattice; rather, they are properties of a broader universality class of critical systems \cite{Stanley}. For the Ising model on a rectangular lattice we expect the following behavior near $T_c$:
+% Table of critical exponents
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Quantity & Power Law & Predicted Exponent \\
+			\hline
+			$C_v$ & $\tau^{-\alpha}$ & $\alpha = 0$ \\
+			$M$ & $\tau^\beta$ & $\beta \approx 1/8$ \\
+			$\chi$ & $\tau^{-\gamma}$ & $\gamma \approx 7/4$ \\
+			$\xi$ & $\tau^{-\nu}$ & $\nu \approx 1$ \\
+			\hline
+		\end{tabular}
+		\caption{Analytical prediction of critical exponents for the 2d Ising model. Note that in the case of $\alpha = 0$, the specific heat is expected to diverge logarithmically as $C_v \sim \log \tau$.}
+		\label{tab:exponents}
+	\end{center}
+\end{table}
 
 \textbf{Methods:} We simulate the 2d Ising Model on an $N$ by $N$ square lattice using the Metropolis-Hastings algorithm, a Markov chain Monte Carlo method which enables sampling when one knows only relative, rather than absolute, probabilities. The lattice, along with representative lattice configurations above, near, and below critical temperature, is depicted in \autoref{fig:fig1}.
 
@@ -166,19 +178,9 @@ The other side of convergence is that Metropolis sampling produces data which is
 
 \textbf{Acknowledgements:}
 	Prof. Navon, Prof. Newburgh, HongJoon
-
+	
 \bibliographystyle{unsrt} 
-%\bibliography{/home/thiago/bibtex/articles,/home/thiago/bibtex/books}
-
-\begin{thebibliography}{}
-	
-	\bibitem{Onsager}
-	Lars Onsager,
-	\textit{Crystal Statistics. I. A Two-Dimensional Model with an Order-Disorder Transition},
-	Physical Review {\bf 65}, 117 (1944).
-	
-	
-\end{thebibliography}
+\bibliography{refs}
 
 \appendix
 \section{Appendix A: Convergence}
