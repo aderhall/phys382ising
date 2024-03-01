@@ -1,0 +1,1921 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.15)  29 FEB 2024 19:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./FinalReport.tex
+(FinalReport.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\latexrelease.sty
+LaTeX Info: Redefining \IfTargetDateBefore on input line 281.
+Package: latexrelease 2022/11/14 v1.0p LaTeX release emulation and tests (inclu
+ding releases up to 2023-06-01)
+Applying: [2019/10/01] Final dot for extension on input line 594.
+Already applied: [0000/00/00] Final dot for extension on input line 611.
+Applying: [2015/01/01] Extended Allocation on input line 622.
+Already applied: [0000/00/00] Extended Allocation on input line 660.
+Applying: [2015/01/01] Extended Allocation on input line 674.
+Already applied: [0000/00/00] Extended Allocation on input line 689.
+Applying: [2015/01/01] Extended Allocation on input line 694.
+Already applied: [0000/00/00] Extended Allocation on input line 702.
+Applying: [2015/01/01] Extended Allocation on input line 705.
+Already applied: [0000/00/00] Extended Allocation on input line 713.
+Applying: [2015/10/01] Extended Allocation (checking) on input line 717.
+Already applied: [2015/01/01] Extended Allocation (checking) on input line 731.
+
+Already applied: [0000/00/00] Extended Allocation (checking) on input line 745.
+
+Applying: [2015/01/01] Extra floats on input line 749.
+Already applied: [0000/00/00] Extra floats on input line 782.
+Skipping: [2020/10/01] emulate alloc@ on input line 787.
+Applying: [0000/00/00] emulate alloc@ on input line 791.
+Applying: [2015/10/01] Extended \newinsert  on input line 799.
+Already applied: [0000/00/00] Extended \newinsert  on input line 843.
+Skipping: [2021/06/01] tracingstacklevels on input line 855.
+Applying: [0000/00/00] tracingstacklevels on input line 865.
+Skipping: [2022/06/01] Add a redirection to obeylines and obeyspaces on input l
+ine 872.
+Applying: [0000/00/00] Add a redirection to obeylines and obeyspaces on input l
+ine 889.
+Skipping: [2021/06/01] \tracingstacklevels and \tracinglostchars =3 on input li
+ne 906.
+Applying: [2015/01/01] etex tracing on input line 927.
+Already applied: [0000/00/00] etex tracing on input line 961.
+Applying: [2015/01/01] turn off etex tracing on input line 969.
+Already applied: [2015/01/01] turn off etex tracing on input line 993.
+Already applied: [0000/00/00] turn off etex tracing on input line 1033.
+Applying: [2015/01/01] hide output from tracing on input line 1037.
+Already applied: [0000/00/00] hide output from tracing on input line 1047.
+Skipping: [2020/10/01] Define several kernel hooks on input line 1269.
+Applying: [0000/00/00] Define several kernel hooks on input line 1278.
+Skipping: [2020/10/01] Roll forward support on input line 1285.
+Skipping: [2020/10/01] Pre-load expl3 on input line 1293.
+Applying: [2020/02/02] Pre-load expl3 on input line 1337.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.ltx)
+Skipping: [2020/10/01] expl3 macros added for the 2020-10-01 release on input l
+ine 1358.
+Applying: [0000/00/00] expl3 macros added for the 2020-10-01 release on input l
+ine 1370.
+Skipping: [2022/06/01] fp and int calculations on input line 1379.
+Applying: [0000/00/00] fp and int calculations on input line 1388.
+Skipping: [2022/06/01] Some pre-expansion commands on input line 1396.
+Applying: [0000/00/00] Some pre-expansion commands on input line 1409.
+Skipping: [2020/10/01] Allow "par" in \typeout  on input line 1416.
+Applying: [0000/00/00] Allow "par" in \typeout  on input line 1423.
+Skipping: [2020/10/01] Make \@carcube long on input line 1428.
+Applying: [0000/00/00] Undo: Make \@carcube long on input line 1431.
+Skipping: [2022/11/01] protected edef on input line 1435.
+Applying: [00/00/00] protected edef on input line 1440.
+Skipping: [2020/10/01] \MakeRobust  on input line 1444.
+Applying: [2019/10/01] \MakeRobust  on input line 1483.
+Already applied: [2015/01/01] \MakeRobust  on input line 1510.
+Already applied: [0000/00/00] \MakeRobust  on input line 1537.
+Skipping: [2020/10/01] Undo robustness on input line 1542.
+Applying: [0000/00/00] Undo robustness on input line 1558.
+Skipping: [2020-10-01] Add \robust@command@act  on input line 1571.
+Applying: [0000-00-00] Add \robust@command@act  on input line 1607.
+Skipping: [2020-10-01] Add \NewCommandCopy , \RenewCommandCopy , and \DeclareCo
+mmandCopy  on input line 1617.
+Applying: [0000-00-00] Undefine \NewCommandCopy , \RenewCommandCopy , and \Decl
+areCommandCopy  on input line 1645.
+Skipping: [2023-06-01] Add \NewEnvironmentCopy , \RenewEnvironmentCopy , and \D
+eclareEnvironmentCopy  on input line 1654.
+Applying: [0000-00-00] Undefine \NewEnvironmentCopy , \RenewEnvironmentCopy , a
+nd \DeclareEnvironmentCopy  on input line 1677.
+Skipping: [2020-10-01] Add \ShowCommand  on input line 1683.
+Applying: [0000-00-00] Undefine \ShowCommand  on input line 1693.
+Skipping: [2020-10-01] Add \@if@DeclareRobustCommand , \@if@newcommand , \@copy
+@DeclareRobustCommand , \@copy@newcommand , \@show@DeclareRobustCommand , \@sho
+w@newcommand  on input line 1700.
+Applying: [0000-00-00] Undefine \@if@DeclareRobustCommand , \@if@newcommand , \
+@copy@DeclareRobustCommand , \@copy@newcommand , \@show@DeclareRobustCommand , 
+\@show@newcommand  on input line 1797.
+Skipping: [2023-06-01] Add \ShowEnvironment  on input line 1809.
+Applying: [0000-00-00] Undefine \ShowEnvironment  on input line 1856.
+Applying: [2018-04-01] Leave commands undefined in \@ifundefined  on input line
+ 1860.
+Already applied: [0000-00-00] Leave commands undefined in \@ifundefined  on inp
+ut line 1888.
+Skipping: [2020/10/01] Add \string@makeletter  on input line 1897.
+Applying: [0000/00/00] Undefine \string@makeletter  on input line 1913.
+Skipping: [2020/10/01] Use primitive \- in Lua\LaTeX  on input line 1918.
+Applying: [2017/04/15] Use \hyphenchar in \- on input line 1933.
+LaTeX Info: Redefining \- on input line 1934.
+Already applied: [0000/00/00] Use \hyphenchar in \- on input line 1944.
+Applying: [2019/10/01] Make various commands robust on input line 1949.
+LaTeX Info: The control sequence `\allowbreak' is already robust on input line 
+1950.
+LaTeX Info: The control sequence `\bigbreak' is already robust on input line 19
+51.
+LaTeX Info: The control sequence `\break' is already robust on input line 1952.
+
+LaTeX Info: The control sequence `\dotfill' is already robust on input line 195
+3.
+LaTeX Info: The control sequence `\frenchspacing' is already robust on input li
+ne 1954.
+LaTeX Info: The control sequence `\goodbreak' is already robust on input line 1
+955.
+LaTeX Info: The control sequence `\hrulefill' is already robust on input line 1
+956.
+LaTeX Info: The control sequence `\medbreak' is already robust on input line 19
+57.
+LaTeX Info: The control sequence `\nobreak' is already robust on input line 195
+8.
+LaTeX Info: The control sequence `\nonfrenchspacing' is already robust on input
+ line 1959.
+LaTeX Info: The control sequence `\obeyspaces' is already robust on input line 
+1961.
+LaTeX Info: The control sequence `\slash' is already robust on input line 1962.
+
+LaTeX Info: The control sequence `\smallbreak' is already robust on input line 
+1963.
+LaTeX Info: The control sequence `\strut' is already robust on input line 1964.
+
+LaTeX Info: The control sequence `\underbar' is already robust on input line 19
+65.
+Already applied: [0000/00/00] Make various commands robust on input line 1968.
+BEGIN module: ltcmd (2020/10/01) on input line 1995.
+              Document command parser.
+Skipping module ltcmd on input line 1995.
+Skipping: [2021/11/15] Support \NewCommandCopy in ltcmd on input line 3008.
+Skipping: [2020/10/01] Support \NewCommandCopy in ltcmd on input line 3059.
+Skipping: [2023/06/01] Distinguish non-expandable document commands on input li
+ne 3062.
+Skipping: [2021/11/15] Support \NewCommandCopy in ltcmd on input line 3077.
+Skipping: [2020/10/01] Support \NewCommandCopy in ltcmd on input line 3090.
+Skipping: [2021/11/15] Support \NewCommandCopy in ltcmd on input line 3093.
+Skipping: [2020/10/01] Support \NewCommandCopy in ltcmd on input line 3211.
+Skipping: [2021/11/15] Support \ShowCommand in ltcmd on input line 3214.
+Skipping: [2020/10/01] Support \ShowCommand in ltcmd on input line 3242.
+Skipping: [2023/06/01] Distinguish non-expandable document commands on input li
+ne 3245.
+Skipping: [2021/11/15] Support \ShowCommand in ltcmd on input line 3254.
+Skipping: [2020/10/01] Support \ShowCommand in ltcmd on input line 3262.
+Skipping: [2021/11/15] Support \ShowCommand in ltcmd on input line 3265.
+Skipping: [2020/10/01] Support \ShowCommand in ltcmd on input line 3388.
+Skipping: [2022/06/01] Testing for empty or blank on input line 4845.
+Skipping: [2021/11/15] Testing for empty or blank on input line 4851.
+Applying: [0000/00/00] Document command parser on input line 4879.
+END module: ltcmd (2020/10/01) on input line 4881.
+BEGIN module: lthooks (2020/10/01) on input line 4891.
+              The hook management system.
+Skipping module lthooks on input line 4891.
+Skipping: [2023/06/01] Hooks with args on input line 4955.
+Skipping: [2020/10/01] Hooks with args on input line 4974.
+Skipping: [2023/06/01] Hooks with args on input line 4990.
+Skipping: [2020/10/01] Hooks with args on input line 5018.
+Skipping: [2023/06/01] Hooks with args on input line 5034.
+Skipping: [2020/10/01] Hooks with args on input line 5046.
+Skipping: [2023/06/01] Hooks with args on input line 5058.
+Skipping: [2020/10/01] Hooks with args on input line 5074.
+Skipping: [2023/06/01] Hooks with args on input line 5087.
+Skipping: [2020/10/01] Hooks with args on input line 5107.
+Skipping: [2023/06/01] Hooks with args on input line 5117.
+Skipping: [2020/10/01] Hooks with args on input line 5137.
+Skipping: [2021/06/01] Disable hooks on input line 5152.
+Skipping: [2020/10/01] Disable hooks on input line 5170.
+Skipping: [2023/06/01] Providing hooks on input line 5176.
+Skipping: [2021/06/01] Providing hooks on input line 5196.
+Skipping: [2020/10/01] Providing hooks on input line 5214.
+Skipping: [2023/06/01] Hooks with args on input line 5371.
+Skipping: [2020/10/01] Providing hooks on input line 5464.
+Skipping: [2023/06/01] Hooks with args on input line 5511.
+Skipping: [2020/10/01] Hooks with args on input line 5528.
+Skipping: [2023/06/01] Hooks with args on input line 5537.
+Skipping: [2021/11/15] Standardise generic hook names on input line 5554.
+Skipping: [2020/10/01] Standardise generic hook names on input line 5571.
+Skipping: [2023/06/01] Hooks with args on input line 5599.
+Skipping: [2021/11/15] Standardise generic hook names on input line 5655.
+Skipping: [2021/06/01] Support cmd hooks on input line 5683.
+Skipping: [2020/10/01] Support cmd hooks on input line 5711.
+Skipping: [2021/11/15] Standardise generic hook names on input line 5734.
+Skipping: [2020/10/01] Standardise generic hook names on input line 5737.
+Skipping: [2021/11/15] Standardise generic hook names on input line 5757.
+Skipping: [2020/10/01] Standardise generic hook names on input line 5760.
+Skipping: [2021/11/15] Standardise generic hook names on input line 5773.
+Skipping: [2020/10/01] Standardise generic hook names on input line 5791.
+Skipping: [2021/11/15] Standardise generic hook names on input line 5796.
+Skipping: [2020/10/01] Standardise generic hook names on input line 5799.
+Skipping: [2023/06/01] Hooks with args on input line 5805.
+Skipping: [2020/10/01] Hooks with args on input line 5810.
+Skipping: [2023/06/01] Hooks with args on input line 5813.
+Skipping: [2020/10/01] Hooks with args on input line 5848.
+Skipping: [2023/06/01] Hooks with args on input line 5881.
+Skipping: [2020/10/01] Hooks with args on input line 5930.
+Skipping: [2023/06/01] Hooks with args on input line 5937.
+Skipping: [2020/10/01] Hooks with args on input line 5953.
+Skipping: [2023/06/01] Hooks with args on input line 5960.
+Skipping: [2020/10/01] Hooks with args on input line 5980.
+Skipping: [2023/06/01] Hooks with args on input line 5984.
+Skipping: [2020/10/01] Hooks with args on input line 6035.
+Skipping: [2023/06/01] Hooks with args on input line 6039.
+Skipping: [2020/10/01] Hooks with args on input line 6055.
+Skipping: [2023/06/01] Hooks with args on input line 6059.
+Skipping: [2020/10/01] Hooks with args on input line 6087.
+Skipping: [2023/06/01] Hooks with args on input line 6090.
+Skipping: [2020/10/01] Hooks with args on input line 6113.
+Skipping: [2023/06/01] Hooks with args on input line 6117.
+Skipping: [2020/10/01] Hooks with args on input line 6134.
+Skipping: [2023/06/01] Hooks with args on input line 6142.
+Skipping: [2020/10/01] Hooks with args on input line 6146.
+Skipping: [2022/06/01] Refuse setting rule for one-time hooks on input line 615
+5.
+Skipping: [2020/10/01] Refuse setting rule for one-time hooks on input line 618
+6.
+Skipping: [2023/06/01] Hooks with args on input line 6260.
+Skipping: [2020/10/01] Hooks with args on input line 6286.
+Skipping: [2023/06/01] Hooks with args on input line 6309.
+Skipping: [2020/10/01] Hooks with args on input line 6341.
+Skipping: [2023/06/01] Hooks with args on input line 6380.
+Skipping: [2020/10/01] Hooks with args on input line 6461.
+Skipping: [2023/06/01] Hooks with args on input line 6649.
+Skipping: [2020/10/01] Hooks with args on input line 6764.
+Skipping: [2023/06/01] Hooks with args on input line 6858.
+Skipping: [2020/10/01] Hooks with args on input line 6863.
+Skipping: [2023/06/01] Hooks with args on input line 6924.
+Skipping: [2020/10/01] Hooks with args on input line 6939.
+Skipping: [2023/06/01] Hooks with args on input line 6956.
+Skipping: [2020/10/01] Hooks with args on input line 6969.
+Skipping: [2023/06/01] Hooks with args on input line 6987.
+Skipping: [2020/10/01] Hooks with args on input line 6992.
+Skipping: [2023/06/01] Hooks with args on input line 6997.
+Skipping: [2021/11/15] Standardise generic hook names on input line 7019.
+Skipping: [2020/10/01] Standardise generic hook names on input line 7039.
+Skipping: [2023/06/01] Hooks with args on input line 7068.
+Skipping: [2020/10/01] Hooks with args on input line 7086.
+Skipping: [2023/06/01] Hooks with args on input line 7091.
+Skipping: [2020/10/01] Hooks with args on input line 7101.
+Skipping: [2021/11/15] Standardise generic hook names on input line 7105.
+Skipping: [2020/10/01] Standardise generic hook names on input line 7108.
+Skipping: [2023/06/01] Hooks with args on input line 7134.
+Skipping: [2020/10/01] Hooks with args on input line 7147.
+Skipping: [2023/06/01] Hooks with args on input line 7157.
+Skipping: [2020/10/01] Hooks with args on input line 7174.
+Skipping: [2023/06/01] Hooks with args on input line 7185.
+Skipping: [2020/10/01] Hooks with args on input line 7197.
+Skipping: [2023/06/01] Hooks with args on input line 7220.
+Skipping: [2020/10/01] Hooks with args on input line 7237.
+Skipping: [2023/06/01] Hooks with args on input line 7303.
+Skipping: [2020/10/01] Hooks with args on input line 7319.
+Skipping: [2023/06/01] Hooks with args on input line 7376.
+Skipping: [2020/10/01] Hooks with args on input line 7405.
+Skipping: [2023/06/01] Hooks with args on input line 7508.
+Skipping: [2020/10/01] Hooks with args on input line 7517.
+Skipping: [2021/06/01] Providing hooks on input line 7523.
+Skipping: [2020/10/01] Providing hooks on input line 7530.
+Skipping: [2023/06/01] Hooks with args on input line 7535.
+Skipping: [2020/10/01] Hooks with args on input line 7542.
+Skipping: [2023/06/01] Hooks with args on input line 7546.
+Skipping: [2020/10/01] Hooks with args on input line 7553.
+Skipping: [2023/06/01] Hooks with args on input line 7573.
+Skipping: [2020/10/01] Hooks with args on input line 7580.
+Applying: [0000/00/00] The hook management on input line 7672.
+END module: lthooks (2020/10/01) on input line 7700.
+BEGIN module: ltcmdhooks (2021/06/01) on input line 7745.
+              The hook management system for commands.
+Skipping module ltcmdhooks on input line 7745.
+Skipping: [2021/11/15] Standardise generic hook names on input line 7762.
+Skipping: [2021/06/01] Standardise generic hook names on input line 7773.
+Skipping: [2023/06/01] cmd hooks with args on input line 7895.
+Skipping: [2021/06/01] cmd hooks with args on input line 7970.
+Skipping: [2023/06/01] cmd hooks with args on input line 8143.
+Skipping: [2021/06/01] cmd hooks with args on input line 8162.
+Skipping: [2023/06/01] cmd hooks with args on input line 8208.
+Skipping: [2021/06/01] cmd hooks with args on input line 8233.
+Skipping: [2023/06/01] cmd hooks with args on input line 8237.
+Skipping: [2021/06/01] cmd hooks with args on input line 8284.
+Skipping: [2023/06/01] Standardise generic hook names on input line 8311.
+Skipping: [2021/06/01] Standardise generic hook names on input line 8314.
+Applying: [0000/00/00] The hook management system for commands on input line 83
+44.
+END module: ltcmdhooks (2021/06/01) on input line 8348.
+Skipping: [2021/11/15] Notes for classes/packages on input line 8355.
+Applying: [0000/00/00] Notes for classes/packages on input line 8374.
+Skipping: [2021/11/15] Display notes on input line 8378.
+Applying: [0000/00/00] Display notes on input line 8390.
+BEGIN module: ltpara (2021/06/01) on input line 8406.
+              Paragraph handling and hooks.
+Skipping module ltpara on input line 8406.
+Skipping: [2023/06/01] minipage fix on input line 8414.
+Skipping: [2021/06/01] minipage fix on input line 8439.
+Applying: [0000/00/00] Undo hooks for paragraphs on input line 8562.
+END module: ltpara (2021/06/01) on input line 8577.
+BEGIN module: ltmeta (2022/06/01) on input line 8587.
+              Document Metadata handling.
+Skipping module ltmeta on input line 8587.
+Applying: [0000/00/00] Undo Document Metadata handling on input line 8615.
+END module: ltmeta (2022/06/01) on input line 8619.
+Applying: [2019/10/01] Make commands robust on input line 8623.
+LaTeX Info: Redefining \pagebreak on input line 8624.
+LaTeX Info: Redefining \nopagebreak on input line 8625.
+LaTeX Info: Redefining \linebreak on input line 8626.
+LaTeX Info: Redefining \nolinebreak on input line 8627.
+LaTeX Info: Redefining \samepage on input line 8628.
+Already applied: [0000/00/00] Make commands robust on input line 8639.
+Applying: [2020/02/02] Make robust on input line 8649.
+Already applied: [0000/00/00] Make robust on input line 8659.
+Skipping: [2020/10/01] Add calc support on input line 8672.
+Applying: [0000/00/00] Add calc support on input line 8676.
+Skipping: [2020/10/01] \newline calc support on input line 8681.
+Applying: [0000/00/00] \newline calc support on input line 8686.
+Applying: [2018/10/10] hyphenation and nobreak after space hack on input line 8
+692.
+Already applied: [2015/10/01] hyphenation and nobreak after space hack on input
+ line 8710.
+Already applied: [2015/01/01] hyphenation and nobreak after space hack on input
+ line 8724.
+Already applied: [0000/00/00] hyphenation and nobreak after space hack on input
+ line 8736.
+Applying: [2015/01/01] hyphenation after space hack on input line 8747.
+Already applied: [0000/00/00] hyphenation after space hack on input line 8760.
+Skipping: [2020/10/01] \addvspace calc support on input line 8772.
+Applying: [0000/00/00] \addvspace calc support on input line 8788.
+Applying: [2015/01/01] \addpenalty  on input line 8805.
+Already applied: [0000/00/00] \addpenalty  on input line 8839.
+Skipping: [2020/10/01] Support calc in \vspace  on input line 8861.
+Applying: [0000/00/00] Support calc in \vspace  on input line 8893.
+Applying: [2015/01/01] Space after \@  on input line 8926.
+Already applied: [0000/00/00] Space after \@  on input line 8930.
+Skipping: [2020/10/01] Support calc with \hspace  on input line 8934.
+Applying: [0000/00/00] Support calc with \hspace  on input line 8939.
+Applying: [2018/12/01] Start LR-mode on input line 8945.
+LaTeX Info: Redefining \enspace on input line 8946.
+Already applied: [0000/00/00] Start LR-mode on input line 8950.
+Skipping: [2020/10/01] Added hook to load l3backend code on input line 8959.
+Applying: [2017/04/15] Save language for hyphenation on input line 9030.
+Already applied: [0000/00/00] Save language for hyphenation on input line 9088.
+
+Skipping: [2020/10/01] Spaces in file names on input line 9142.
+Applying: [2019/10/01] Spaces in file names on input line 9178.
+Already applied: [0000/00/00] Spaces in file names on input line 9199.
+Skipping: [2022/06/01] Spaces in file names and hooks on input line 9211.
+Skipping: [2020/10/01] Spaces in file names and hooks on input line 9263.
+Applying: [0000/00/00] Spaces in file names and hooks on input line 9312.
+Applying: [2019/10/01] Quote file names on input line 9345.
+LaTeX Info: Redefining \IfFileExists on input line 9349.
+Already applied: [0000/00/00] Quote file names on input line 9354.
+Skipping: [2023/05/01] IfFileExists on input line 9377.
+Skipping: [2021/06/01] IfFileExists on input line 9408.
+Applying: [2019/10/01] IfFileExists on input line 9430.
+Already applied: [0000/00/00] IfFileExists on input line 9448.
+Applying: [2019/10/01] Quote file names on input line 9455.
+Already applied: [0000/00/00] Quote file names on input line 9470.
+Applying: [2019/10/01] Don't lose the file name on input line 9487.
+Already applied: [0000/00/00] Don't lose the file name on input line 9491.
+Skipping: [2020/10/01] Change in file error handling on input line 9495.
+Applying: [2019/10/01] Quote file names on input line 9508.
+Already applied: [0000/00/00] Quote file names on input line 9519.
+Skipping: [2020/10/01] Do not load missing file immediately on input line 9529.
+
+Applying: [0000/00/00] Do not load missing file immediately on input line 9561.
+
+Applying: [2017/04/15] test for undeclared accent on input line 9589.
+Already applied: [0000/00/00] test for undeclared accent on input line 9614.
+Applying: [2019/10/01] Make commands robust on input line 9634.
+LaTeX Info: Redefining \UseTextAccent on input line 9635.
+LaTeX Info: Redefining \UseTextSymbol on input line 9643.
+Already applied: [0000/00/00] Make commands robust on input line 9654.
+Applying: [2015/10/01] comma accent on input line 9660.
+Already applied: [0000/00/00] comma accent on input line 9666.
+Applying: [2016/02/01] comma above on input line 9687.
+Already applied: [0000/00/00] comma above on input line 9701.
+Applying: [2015/01/01] Reset nested counters on input line 9712.
+Already applied: [0000/00/00] Reset nested counters on input line 9716.
+Applying: [2018-04-01] Add interfaces on input line 9720.
+Already applied: [0000-00-00] Add interfaces on input line 9742.
+Skipping: [2021/11/15] counter without/within on input line 9747.
+Applying: [2018-04-01] counter without/within on input line 9768.
+Already applied: [0000-00-00] counter without/within on input line 9795.
+Applying: [2015/01/01] Use \TextOrMath  on input line 9803.
+Already applied: [0000/00/00] Use \TextOrMath  on input line 9817.
+Applying: [2015/01/01] \TextOrMath  on input line 9823.
+Already applied: [0000/00/00] \TextOrMath  on input line 9839.
+Applying: [2015/01/01] Using \setlength with \dimen 0 on input line 9844.
+Already applied: [0000/00/00] Using \setlength with \dimen 0 on input line 9848
+.
+Applying: [2020/02/02] Maybe drop one m on input line 9854.
+Already applied: [0000/00/00] Maybe drop one m on input line 9881.
+Applying: [2015/01/01] Arbitrary units in \DeclareMathSizes  on input line 9902
+.
+Already applied: [0000/00/00] Arbitrary units in \DeclareMathSizes  on input li
+ne 9922.
+Skipping: [2021/06/01] Force font face on input line 9939.
+Applying: [2020/02/02] Drop m in usefont on input line 9949.
+LaTeX Info: Redefining \usefont on input line 9951.
+Already applied: [0000/00/00] Drop m in usefont on input line 9959.
+Skipping: [2021/11/15] Handle spaces after math on input line 9969.
+Skipping: [2020/10/01] Handle spaces after math on input line 9981.
+Applying: [2020/02/02] Loading .fd files on input line 9990.
+Already applied: [0000/00/00] Loading .fd files on input line 10000.
+Applying: [2020/02/02] Provide family substitution on input line 10005.
+Already applied: [0000/00/00] Provide family substitution on input line 10036.
+Applying: [2019/10/01] No side effects please on input line 10041.
+Already applied: [0000/00/00] No side effects please on input line 10053.
+Applying: [2015/01/01] Font substitution in preamble on input line 10071.
+Already applied: [0000/00/00] Font substitution in preamble on input line 10105
+.
+Applying: [2017/01/01] XeTeX support for \showhyphens  on input line 10138.
+LaTeX Info: Redefining \showhyphens on input line 10140.
+Already applied: [0000/00/00] XeTeX support for \showhyphens  on input line 101
+98.
+Applying: [2020/02/02] Series change rules on input line 10213.
+Already applied: [0000/00/00] Series change rules on input line 10595.
+Skipping: [2021/06/01] delay fontseries update on input line 10601.
+Applying: [2020/02/02] delay fontseries update on input line 10612.
+LaTeX Info: Redefining \fontseries on input line 10614.
+LaTeX Info: Redefining \fontseriesforce on input line 10616.
+Already applied: [0000/00/00] delay fontseries update on input line 10624.
+Applying: [2020/02/02] Merge series values on input line 10631.
+Already applied: [0000/00/00] Merge series values on input line 10710.
+Applying: [2020/02/02] Font shape change rules on input line 10726.
+LaTeX Info: Redefining \ulcshape on input line 10729.
+LaTeX Info: Redefining \swshape on input line 10734.
+LaTeX Info: Redefining \sscshape on input line 10739.
+Already applied: [0000/00/00] Font shape change rules on input line 10784.
+Skipping: [2021/06/01] Font shape change on input line 10796.
+Applying: [2020/02/02] Font shape change on input line 10805.
+LaTeX Info: Redefining \fontshape on input line 10807.
+LaTeX Info: Redefining \fontshapeforce on input line 10808.
+Already applied: [0000/00/00] Font shape change on input line 10812.
+Applying: [2020/02/02] Font shape change rules on input line 10820.
+Already applied: [0000/00/00] Font shape change rules on input line 10893.
+Skipping: [2020/10/01] NFSS series init on input line 10911.
+Applying: [2020/02/02] NFSS series init on input line 10916.
+Already applied: [0000/00/00] NFSS series init on input line 10920.
+Skipping: [2021/06/01] Add hook to \selectfont  on input line 10927.
+Applying: [0000/00/00] Add hook to \selectfont  on input line 10962.
+LaTeX Info: Redefining \selectfont on input line 10964.
+Applying: [2020/02/02] alias size function on input line 10978.
+Already applied: [0000/00/00] alias size function on input line 10986.
+Applying: [2015/01/01] \select@group  on input line 10995.
+Already applied: [0000/00/00] \select@group  on input line 11022.
+Skipping: [2021/11/15] \document@select@group  on input line 11050.
+Skipping: [2020/10/01] \document@select@group  on input line 11090.
+Applying: [2015/01/01] \document@select@group  on input line 11120.
+Already applied: [0000/00/00] \document@select@group  on input line 11151.
+Skipping: [2022/11/01] freeze math version on input line 11182.
+Skipping: [2021/11/15] freeze math version on input line 11213.
+Skipping: [2022/11/01] local alphabets on input line 11256.
+Skipping: [2021/11/15] local alphabets on input line 11268.
+Applying: [0000/00/00] local alphabets on input line 11274.
+Skipping: [2022/11/01] maybe drop m on input line 11279.
+Applying: [0000/00/00] maybe drop m on input line 11326.
+Skipping: [2022/11/01] maybe drop m on input line 11333.
+Applying: [0000/00/00] maybe drop m on input line 11357.
+Applying: [2019/10/01] Make math accents robust on input line 11364.
+Already applied: [0000/00/00] Make math accents robust on input line 11411.
+Applying: [2019/10/01] makemath accents robust on input line 11453.
+Already applied: [0000/00/00] makemath accents robust on input line 11461.
+Applying: [2019/10/01] make delimiters robust on input line 11468.
+Already applied: [0000/00/00] make delimiters robust on input line 11477.
+Skipping: [2021/11/15] Custom series on input line 11488.
+Applying: [2020/02/02] Custom series on input line 11523.
+Already applied: [0000/00/00] Custom series on input line 11556.
+Applying: [2020/02/02] Custom series on input line 11578.
+Already applied: [0000/00/00] Custom series on input line 11661.
+Skipping: [2021/11/15] Custom series with hooks on input line 11682.
+Skipping: [2020/10/01] Custom series with hooks on input line 11735.
+Applying: [2020/02/02] Custom series with hooks on input line 11782.
+LaTeX Info: Redefining \bfseries on input line 11785.
+LaTeX Info: Redefining \mdseries on input line 11796.
+Already applied: [0000/00/00] Custom series with hooks on input line 11811.
+Skipping: [2020/10/01] Custom series with hooks on input line 11822.
+Applying: [2020/02/02] Custom series with hooks on input line 11863.
+LaTeX Info: Redefining \rmfamily on input line 11875.
+LaTeX Info: Redefining \sffamily on input line 11880.
+LaTeX Info: Redefining \ttfamily on input line 11885.
+Already applied: [0000/00/00] Custom series with hooks on input line 11897.
+Skipping: [2020/10/01] Font series context on input line 11923.
+Applying: [0000/00/00] Font series context on input line 11956.
+Applying: [2020/02/02] Nested emph on input line 11965.
+LaTeX Info: Redefining \emreset on input line 11970.
+LaTeX Info: Redefining \em on input line 11971.
+Already applied: [2015/01/01] Nested emph on input line 11998.
+Already applied: [0000/00/00] Nested emph on input line 12011.
+Skipping: [2020/10/01] XeTeX change for math on input line 12018.
+Applying: [0000/00/00] XeTeX change for math on input line 12026.
+LaTeX Info: Redefining \symbol on input line 12028.
+Skipping: [2021/06/01] Add hook to \normalfont  on input line 12032.
+Skipping: [2020/10/01] Add hook to \normalfont  on input line 12046.
+Applying: [2020/02/02] Add hook to \normalfont  on input line 12062.
+LaTeX Info: Redefining \normalfont on input line 12064.
+Already applied: [0000/00/00] Add hook to \normalfont  on input line 12079.
+Applying: [2017/01/01] TU encoding default on input line 12094.
+Already applied: [0000/00/00] TU encoding default on input line 12112.
+Applying: [2020/02/02] font defaults change on input line 12122.
+Already applied: [0000/00/00] font defaults change on input line 12130.
+Applying: [2018/12/01] Start LR-mode on input line 12139.
+LaTeX Info: Redefining \big on input line 12140.
+LaTeX Info: Redefining \Big on input line 12142.
+LaTeX Info: Redefining \bigg on input line 12144.
+LaTeX Info: Redefining \Bigg on input line 12146.
+Already applied: [0000/00/00] Start LR-mode on input line 12150.
+Applying: [2020/02/02] Additional text commands on input line 12159.
+LaTeX Info: Redefining \textulc on input line 12160.
+LaTeX Info: Redefining \textsw on input line 12161.
+LaTeX Info: Redefining \textssc on input line 12162.
+Already applied: [0000/00/00] Additional text commands on input line 12165.
+BEGIN module: lttextcomp (2020/02/02) on input line 12173.
+              Text Companion symbols.
+Skipping module lttextcomp on input line 12173.
+Skipping: [0000/00/00] Undefine text companion symbols on input line 12774.
+END module: lttextcomp (2020/02/02) on input line 12975.
+Skipping: [2023/06/01] store five arguments on input line 12981.
+Skipping: [2022/06/01] store five arguments on input line 12998.
+Applying: [0000/00/00] store five arguments on input line 13015.
+Skipping: [2022/06/01] Add starred reference commands on input line 13031.
+Applying: [0000/00/00] Add starred reference commands on input line 13044.
+Skipping: [2023/06/01] store five label arguments on input line 13051.
+Skipping: [2022/06/01] Add starred version on input line 13066.
+Applying: [0000/00/00] store five label arguments on input line 13082.
+Skipping: [2020/10/01] Add starred version on input line 13092.
+Applying: [2019/10/01] Add \labelformat and \Ref  on input line 13104.
+LaTeX Info: Redefining \Ref on input line 13111.
+Already applied: [0000/00/00] Add \labelformat and \Ref  on input line 13115.
+Skipping: [2020/10/01] Use Hooks on input line 13127.
+Applying: [0000/00/00] Use Hooks on input line 13188.
+Skipping: [2021/06/01] kernel before hook on input line 13227.
+Applying: [0000/00/00] kernel before hook on input line 13231.
+Applying: [2018/12/01] Mask line endings on input line 13237.
+Already applied: [0000/00/00] Mask line endings on input line 13264.
+Skipping: [2020/10/01] Use hook system on input line 13277.
+Applying: [2019/10/01] Making \begin /\end robust on input line 13326.
+LaTeX Info: Redefining \begin on input line 13327.
+Already applied: [0000/00/00] Making \begin /\end robust on input line 13359.
+Skipping: [2020/10/01] Hooks for environments on input line 13378.
+Applying: [0000/00/00] Hooks for environments on input line 13385.
+Applying: [2020/02/02] Make robust on input line 13394.
+Already applied: [0000/00/00] Make robust on input line 13399.
+Skipping: [2020/10/01] centering, etc support calc on input line 13406.
+Applying: [0000/00/00] centering, etc support calc on input line 13410.
+Skipping: [2020/10/01] Set finaldhypendemerits on input line 13415.
+Applying: [2019/10/01] Make commands robust on input line 13433.
+LaTeX Info: Redefining \centering on input line 13435.
+LaTeX Info: Redefining \raggedright on input line 13439.
+LaTeX Info: Redefining \raggedleft on input line 13443.
+Already applied: [0000/00/00] Make commands robust on input line 13450.
+Applying: [2017-04-15] Disable hyphenation in verbatim on input line 13458.
+Already applied: [0000-00-00] Disable hyphenation in verbatim on input line 134
+79.
+Applying: [2018/12/01] Setup visible space for \verb  on input line 13500.
+LaTeX Info: Redefining \asciispace on input line 13501.
+Already applied: [0000/00/00] Setup visible space for \verb  on input line 1352
+6.
+Skipping: [2020/10/01] Drop spaces before \verb delimiter on input line 13536.
+Applying: [2018/12/01] Setup visible space for \verb  on input line 13550.
+Already applied: [0000/00/00] Setup visible space for \verb  on input line 1356
+6.
+Applying: [2017-04-15] Disable hyphenation in verb on input line 13577.
+Already applied: [0000-00-00] Disable hyphenation in verb on input line 13586.
+Applying: [2019/10/01] Make commands robust on input line 13595.
+LaTeX Info: Redefining \vphantom on input line 13596.
+LaTeX Info: Redefining \hphantom on input line 13597.
+LaTeX Info: Redefining \phantom on input line 13598.
+LaTeX Info: Redefining \mathstrut on input line 13599.
+Already applied: [0000/00/00] Make commands robust on input line 13602.
+Applying: [2018/12/01] Start LR-mode on input line 13611.
+Already applied: [0000/00/00] Start LR-mode on input line 13619.
+Skipping: [2022/11/01] Guard against reboxing on input line 13626.
+Applying: [0000/00/00] Guard against reboxing on input line 13632.
+Applying: [2018/12/01] Start LR-mode on input line 13637.
+Already applied: [0000/00/00] Start LR-mode on input line 13641.
+Applying: [2019/10/01] Make commands robust on input line 13645.
+LaTeX Info: Redefining \cases on input line 13646.
+LaTeX Info: Redefining \matrix on input line 13648.
+LaTeX Info: Redefining \pmatrix on input line 13652.
+Already applied: [0000/00/00] Make commands robust on input line 13655.
+Skipping: [2020/10/01] amsmath spacing commands on input line 13663.
+Applying: [0000/00/00] amsmath spacing commands on input line 13679.
+LaTeX Info: Redefining \, on input line 13682.
+LaTeX Info: Redefining \thinspace on input line 13684.
+LaTeX Info: Redefining \negthinspace on input line 13685.
+Applying: [2015/01/01] Make \( robust on input line 13695.
+LaTeX Info: Redefining \( on input line 13696.
+LaTeX Info: Redefining \) on input line 13698.
+Already applied: [0000/00/00] Make \( robust on input line 13701.
+Applying: [2015/01/01] Make \[ robust on input line 13709.
+LaTeX Info: Redefining \[ on input line 13710.
+LaTeX Info: Redefining \] on input line 13721.
+Already applied: [0000/00/00] Make \[ robust on input line 13734.
+Skipping: [2020/10/01] eqnarray support calc syntax on input line 13762.
+Applying: [0000/00/00] eqnarray support calc syntax on input line 13770.
+Skipping: [2023/06/01] add ignorespaces to eqno on input line 13779.
+Applying: [0000/00/00] add ignorespaces to eqno on input line 13786.
+Applying: [2015/01/01] Make \makebox robust on input line 13793.
+LaTeX Info: Redefining \makebox on input line 13794.
+Already applied: [0000/00/00] Make \makebox robust on input line 13801.
+Skipping: [2020/10/01] default units on input line 13810.
+Applying: [0000/00/00] default units on input line 13829.
+Skipping: [2021/06/01] color group settings on input line 13846.
+Applying: [0000/00/00] color group settings on input line 13856.
+Applying: [2015/01/01] Make \savebox robust on input line 13868.
+LaTeX Info: Redefining \savebox on input line 13869.
+Already applied: [0000/00/00] Make \savebox robust on input line 13874.
+Applying: [2015/01/01] Make \framebox robust on input line 13881.
+LaTeX Info: Redefining \framebox on input line 13882.
+Already applied: [0000/00/00] Make \framebox robust on input line 13887.
+Applying: [2015/01/01] Make \parbox robust on input line 13894.
+LaTeX Info: Redefining \parbox on input line 13895.
+Already applied: [0000/00/00] Make \parbox robust on input line 13901.
+Applying: [2017-04-15] reset \lineskiplimit  on input line 13910.
+Already applied: [0000-00-00] reset \lineskiplimit  on input line 13930.
+Skipping: [2021/11/15] footnotetext tagging on input line 13947.
+Skipping: [2021/06/01] footnotetext tagging on input line 13964.
+Applying: [0000/00/00] footnotetext tagging on input line 13980.
+Applying: [2015/01/01] Make \rule robust on input line 13997.
+LaTeX Info: Redefining \rule on input line 13998.
+Already applied: [0000/00/00] Make \rule robust on input line 14001.
+Applying: [2015/01/01] Make \raisebox robust on input line 14006.
+LaTeX Info: Redefining \raisebox on input line 14007.
+Already applied: [0000/00/00] Make \raisebox robust on input line 14012.
+Skipping: [2020/10/01] Tabbing calc syntax on input line 14020.
+Applying: [0000/00/00] Tabbing calc syntax on input line 14024.
+Applying: [2019/10/01] Make commands robust on input line 14029.
+LaTeX Info: Redefining \pushtabs on input line 14030.
+LaTeX Info: Redefining \poptabs on input line 14033.
+LaTeX Info: Redefining \kill on input line 14045.
+Already applied: [0000/00/00] Make commands robust on input line 14048.
+Skipping: [2020/10/01] tabular support calc syntax on input line 14056.
+Applying: [0000/00/00] tabular support calc syntax on input line 14060.
+Skipping: [2020/10/01] default units on input line 14066.
+Applying: [0000/00/00] default units on input line 14071.
+Skipping: [2020/10/01] default units on input line 14075.
+Applying: [0000/00/00] default units on input line 14087.
+Skipping: [2020/10/01] default units on input line 14096.
+Applying: [0000/00/00] default units on input line 14109.
+Skipping: [2020/10/01] default units on input line 14117.
+Applying: [0000/00/00] default units on input line 14125.
+Skipping: [2020/10/01] default units on input line 14133.
+Applying: [0000/00/00] default units on input line 14144.
+Skipping: [2020/10/01] \shortstack calc support on input line 14154.
+Applying: [0000/00/00] \shortstack calc support on input line 14158.
+Skipping: [2020/10/01] default units on input line 14163.
+Applying: [0000/00/00] default units on input line 14174.
+Skipping: [2020/10/01] default units on input line 14185.
+Applying: [0000/00/00] default units on input line 14199.
+Skipping: [2020/10/01] default units on input line 14213.
+Applying: [0000/00/00] default units on input line 14270.
+Applying: [2016/03/31] Avoid almost zero length leaders on input line 14328.
+Already applied: [0000/00/00] Avoid almost zero length leaders on input line 14
+334.
+Skipping: [2020/10/01] default units on input line 14339.
+Applying: [2016/03/31] default units on input line 14366.
+Already applied: [0000/00/00] default units on input line 14396.
+Applying: [2016/03/31] Avoid almost zero length leaders on input line 14421.
+Already applied: [0000/00/00] Avoid almost zero length leaders on input line 14
+433.
+Applying: [2016/03/31] Avoid almost zero length leaders on input line 14444.
+Already applied: [0000/00/00] Avoid almost zero length leaders on input line 14
+453.
+Skipping: [2020/10/01] default units on input line 14461.
+Applying: [0000/00/00] default units on input line 14477.
+Skipping: [2020/10/01] default units on input line 14494.
+Applying: [0000/00/00] default units on input line 14500.
+Skipping: [2020/10/01] default units on input line 14504.
+Applying: [0000/00/00] default units on input line 14563.
+Applying: [2019/10/01] Make commands robust on input line 14618.
+LaTeX Info: The control sequence `\bezier' is already robust on input line 1461
+9.
+LaTeX Info: The control sequence `\circle' is already robust on input line 1462
+0.
+LaTeX Info: The control sequence `\linethickness' is already robust on input li
+ne 14623.
+LaTeX Info: The control sequence `\oval' is already robust on input line 14625.
+
+LaTeX Info: The control sequence `\qbezier' is already robust on input line 146
+27.
+LaTeX Info: The control sequence `\shortstack' is already robust on input line 
+14628.
+LaTeX Info: The control sequence `\thinlines' is already robust on input line 1
+4629.
+Already applied: [0000/00/00] Make commands robust on input line 14633.
+Applying: [2019/10/01] Make commands robust on input line 14652.
+LaTeX Info: Redefining \title on input line 14653.
+LaTeX Info: Redefining \author on input line 14654.
+LaTeX Info: Redefining \date on input line 14655.
+LaTeX Info: Redefining \thanks on input line 14656.
+LaTeX Info: Redefining \and on input line 14660.
+Already applied: [0000/00/00] Make commands robust on input line 14666.
+Skipping: [2020/10/01] fourth argument on input line 14676.
+Applying: [2018/12/01] Mask line endings on input line 14682.
+Already applied: [0000/00/00] Mask line endings on input line 14688.
+Skipping: [2021/11/15] Four arguments on input line 14693.
+Applying: [0000/00/00] Four arguments on input line 14699.
+Applying: [2018/12/01] Prevent protrusion on input line 14705.
+LaTeX Info: Redefining \noprotrusion on input line 14725.
+Already applied: [0000/00/00] Prevent protrusion on input line 14728.
+Applying: [2015/01/01] Check float options on input line 14751.
+Already applied: [0000/00/00] Check float options on input line 14819.
+Applying: [2015/01/01] float order in 2-column on input line 14887.
+Already applied: [0000/00/00] float order in 2-column on input line 14911.
+Applying: [2015/01/01] float order in 2-column on input line 14926.
+Already applied: [0000/00/00] float order in 2-column on input line 14938.
+Skipping: [2021/06/01] Explicit par for marginpar on input line 14951.
+Applying: [0000/00/00] Explicit par for marginpar on input line 14967.
+Skipping: [2020/10/01] superscript baseline on input line 14984.
+Applying: [0000/00/00] superscript baseline on input line 14989.
+Applying: [2015/01/01] \textsubscript  on input line 14995.
+LaTeX Info: Redefining \textsubscript on input line 14996.
+Already applied: [0000/00/00] \textsubscript  on input line 15000.
+Skipping: [2020/10/01] subscript baseline on input line 15004.
+Applying: [2015/01/01] subscript baseline on input line 15009.
+Already applied: [0000/00/00] subscript baseline on input line 15015.
+Skipping: [2021/11/15] footnotetext tagging on input line 15019.
+Skipping: [2021/06/01] footnotetext tagging on input line 15037.
+Applying: [0000/00/00] footnotetext tagging on input line 15054.
+Skipping: [2021/06/01] Add footref on input line 15072.
+Applying: [0000/00/00] Add footref on input line 15081.
+Skipping: [2022/06/01] check for blank on input line 15089.
+Applying: [0000/00/00] check for blank on input line 15099.
+LaTeX Info: Redefining \cite on input line 15101.
+Skipping: [2021/06/01] Allow nocite in preamble on input line 15107.
+Applying: [0000/00/00] Allow nocite in preamble on input line 15121.
+BEGIN module: ltmarks (2022/06/01) on input line 15146.
+              Marks handling.
+Skipping module ltmarks on input line 15146.
+Applying: [0000/00/00] Undo Marks handling on input line 15436.
+LaTeX Info: Redefining \NewMarkClass on input line 15438.
+LaTeX Info: Redefining \InsertMark on input line 15439.
+END module: ltmarks (2022/06/01) on input line 15449.
+Skipping: [2022/06/01] New mark support on input line 15454.
+Applying: [2019/10/01] Make commands robust on input line 15480.
+LaTeX Info: Redefining \markboth on input line 15482.
+LaTeX Info: Redefining \markright on input line 15490.
+Already applied: [0000/00/00] Make commands robust on input line 15501.
+Skipping: [2020/10/01] Add \@currpath  on input line 15511.
+Applying: [0000/00/00] Add \@currpath  on input line 15515.
+Skipping: [2020/10/01] Add \@expl@push@filename@@ and \@expl@push@filename@aux@
+@  on input line 15520.
+Applying: [2020/02/02] Add \@expl@push@filename@@  on input line 15535.
+Already applied: [0000/00/00] Add \@expl@push@filename@@ and \@expl@push@filena
+me@aux@@  on input line 15547.
+Skipping: [2020/10/01] Add \@expl@pop@filename@@  on input line 15571.
+Applying: [2020/02/02] Add \@expl@push@filename@@  on input line 15579.
+Already applied: [0000/00/00] Add \@expl@push@filename@@ and \@expl@push@filena
+me@aux@@  on input line 15585.
+Skipping: [2020/10/01] Add \@kernel@currpathstack  on input line 15598.
+Applying: [0000/00/00] Add \@kernel@currpathstack  on input line 15615.
+Skipping: [2020/10/01] Test format date on input line 15621.
+Applying: [0000/00/00] Test format date on input line 15628.
+Applying: [2018/04/01] Guard against bad input on input line 15635.
+Already applied: [0000/00/00] Guard against bad input on input line 15646.
+Applying: [2017/01/01] Spaces in option clash check on input line 15657.
+Already applied: [0000/00/00] Spaces in option clash check on input line 15674.
+
+Skipping: [2021/11/15] Test package loading on input line 15691.
+Applying: [0000/00/00] Test package loading on input line 15698.
+Skipping: [2020/10/01] Check name with \strcmp  on input line 15707.
+Applying: [0000/00/00] Undo: check name with \strcmp  on input line 15720.
+Skipping: [2020/10/01] Allow for package substitution on input line 15731.
+Applying: [2020/02/02] Protection for package info on input line 15748.
+Already applied: [0000/00/00] Protection for package info on input line 15761.
+Applying: [0000/00/00] Track \ProvidesPackage  on input line 15774.
+Skipping: [2021/06/01] Raw option lists on input line 15779.
+Skipping: [2020/10/01] Add file replacement in \@pass@ptions  on input line 158
+00.
+Applying: [0000/00/00] \@pass@ptions  on input line 15816.
+Skipping: [2021/06/01] filter unused option list on input line 15825.
+Applying: [0000/00/00] filter unused option list on input line 15835.
+Skipping: [2021/06/01] safer @xprocess@ptions on input line 15845.
+Applying: [0000/00/00] safer @xprocess@ptions on input line 15861.
+Skipping: [2020/10/01] Unused options issue on input line 15877.
+Applying: [0000/00/00] Unused options issue on input line 15894.
+Skipping: [2021/06/01] filter unused option list on input line 15909.
+Applying: [0000/00/00] filter unused option list on input line 15917.
+Applying: [2017/01/01] Spaces in \ExecuteOptions  on input line 15924.
+Already applied: [0000/00/00] Spaces in \ExecuteOptions  on input line 15934.
+Skipping: [2021/06/01] Raw option lists load with options on input line 15943.
+Applying: [0000/00/00] Raw option lists load with options on input line 15952.
+Skipping: [2020/10/01] Unused options issue on input line 15959.
+Applying: [0000/00/00] Unused options issue on input line 15968.
+Skipping: [2020/10/01] ifx tests in \@fileswith@pti@ns  on input line 15975.
+Applying: [2017/01/01] ifx tests in \@fileswith@pti@ns  on input line 16003.
+Already applied: [0000/00/00] ifx tests in \@fileswith@pti@ns  on input line 16
+030.
+Skipping: [2020/10/01] Hooks and unused options issue on input line 16058.
+Applying: [0000/00/00] Hooks and unused options issue on input line 16199.
+Skipping: [2020/10/01] Use hook system on input line 16256.
+Applying: [0000/00/00] Use hook system on input line 16261.
+LaTeX Info: Redefining \AtBeginDocument on input line 16263.
+LaTeX Info: Redefining \AtEndDocument on input line 16264.
+Skipping: [2020/10/01] Define \q@curr@file directly (gh/220) on input line 1626
+8.
+Applying: [2019/10/01] Spaces in file names + optional arg on input line 16401.
+
+Already applied: [0000/00/00] Spaces in file names + optional arg on input line
+ 16532.
+Skipping: [2020/10/01] Hook management file on input line 16625.
+Applying: [0000/00/00] Hook management file on input line 16634.
+Skipping: [2020/10/01] File helpers on input line 16643.
+Skipping: [2020/10/01] Roll forward help on input line 16704.
+Skipping: [2020/10/01] Hook management (files) on input line 16756.
+Applying: [2019/10/01] Hook management (files) on input line 16791.
+LaTeX Info: Redefining \InputIfFileExists on input line 16793.
+Already applied: [0000/00/00] Hook management (files) on input line 16802.
+Skipping: [2020/10/01] Declaring file substitution on input line 16811.
+Skipping: [2020/10/01] File substitution on input line 16851.
+Applying: [0000/00/00] File substitution on input line 16858.
+Skipping: [2022/06/01] Setting current file name on input line 16865.
+Skipping: [2021/06/01] Setting current file name on input line 16895.
+Skipping: [2020/10/01] Setting current file name on input line 16918.
+Applying: [2019/10/01] Setting current file name on input line 16939.
+Already applied: [0000/00/00] Setting current file name on input line 16953.
+Skipping: [2020/10/01] Make file csname on input line 16958.
+Skipping: [2020/10/01] Set curr file on input line 16977.
+Skipping: [2020/10/01] Replace files detect loops on input line 16992.
+Skipping: [2020/10/01] Tortoise and Hare on input line 17013.
+Skipping: [2020/10/01] Disable packages on input line 17054.
+Applying: [0000/00/00] Disable packages on input line 17069.
+Skipping: [2020/10/01] 2e tmp interfaces on input line 17076.
+Applying: [0000/00/00] 2e tmp interfaces on input line 17102.
+Skipping: [2020/10/01] Hook management (shipout) on input line 17114.
+Applying: [0000/00/00] Hook management (shipout) on input line 17537.
+LaTeX Info: Redefining \AtBeginDvi on input line 17554.
+Skipping: [2020/10/01] atenddvi emulation on input line 17573.
+Applying: [0000/00/00] atenddvi emulation on input line 17586.
+Applying: [2015/10/01] Extended float list on input line 17592.
+\bx@S=\insert199
+\bx@T=\insert198
+\bx@U=\insert197
+\bx@V=\insert196
+\bx@W=\insert195
+\bx@X=\insert194
+\bx@Y=\insert193
+\bx@Z=\insert192
+\bx@AA=\insert191
+\bx@BB=\insert190
+\bx@CC=\insert189
+\bx@DD=\insert188
+\bx@EE=\insert187
+\bx@FF=\insert186
+\bx@GG=\insert185
+\bx@HH=\insert252
+\bx@II=\insert251
+\bx@JJ=\insert250
+\bx@KK=\insert249
+\bx@LL=\insert248
+\bx@MM=\insert247
+\bx@NN=\insert246
+\bx@OO=\insert245
+\bx@PP=\insert244
+\bx@QQ=\insert243
+\bx@RR=\insert242
+\bx@SS=\insert241
+\bx@TT=\insert240
+\bx@UU=\insert239
+\bx@VV=\insert238
+\bx@WW=\insert237
+\bx@XX=\insert236
+\bx@YY=\insert235
+\bx@ZZ=\insert199
+Already applied: [0000/00/00] Extended float list on input line 17612.
+Applying: [2017/04/15] Check depth of page on input line 17621.
+Already applied: [0000/00/00] Check depth of page on input line 17647.
+Applying: [2015/01/01] float order in 2-column on input line 17665.
+Already applied: [0000/00/00] float order in 2-column on input line 17674.
+Applying: [2015/01/01] float order in 2-column on input line 17679.
+Already applied: [0000/00/00] float order in 2-column on input line 17722.
+Applying: [2017/04/15] Reset language for hyphenation on input line 17765.
+Already applied: [0000/00/00] Reset language for hyphenation on input line 1782
+3.
+Applying: [2015/01/01] float order in 2-column on input line 17881.
+Already applied: [0000/00/00] float order in 2-column on input line 17896.
+Applying: [2015/01/01] float order in 2-column on input line 17912.
+Already applied: [0000/00/00] float order in 2-column on input line 17931.
+Applying: [2015/01/01] float order in 2-column on input line 17949.
+Already applied: [0000/00/00] float order in 2-column on input line 17971.
+Applying: [2015/01/01] float order in 2-column on input line 17992.
+Already applied: [0000/00/00] float order in 2-column on input line 18059.
+Applying: [2015/01/01] float order in 2-column on input line 18129.
+Already applied: [0000/00/00] float order in 2-column on input line 18162.
+Applying: [2015/01/01] float order in 2-column on input line 18194.
+Already applied: [0000/00/00] float order in 2-column on input line 18241.
+Skipping: [2021/11/15] Show float register contents on input line 18288.
+Applying: [0000/00/00] Show float register contents on input line 18310.
+Applying: [2017/01/01] negative height floats on input line 18318.
+Already applied: [0000/00/00] negative height floats on input line 18328.
+Applying: [2015/01/01] 2 column marks on input line 18338.
+Already applied: [0000/00/00] 2 column marks on input line 18379.
+Applying: [2015/01/01] NFSS version1 commands on input line 18414.
+Already applied: [0000/00/00] NFSS version1 commands on input line 18434.
+Applying: [2015/01/01] Extended Allocation on input line 18557.
+Already applied: [0000/00/00] Extended Allocation on input line 18564.
+Skipping: [2022/06/01] Delayed legacy marks on input line 18568.
+Applying: [0000/00/00] Delayed legacy marks on input line 18574.
+Applying: [2015/01/01] Extended Allocation on input line 18578.
+Already applied: [0000/00/00] Extended Allocation on input line 18592.
+Applying: [2016/02/01] Start of XeTeX class allocator on input line 18610.
+Already applied: [2015/01/01] Start of XeTeX class allocator on input line 1861
+8.
+Already applied: [0000/00/00] Start of XeTeX class allocator on input line 1862
+5.
+Skipping: [2021/06/01] Lua trace_stack_levels function on input line 18641.
+Applying: [0000/00/00] Lua trace_stack_levels function on input line 18670.
+Applying: [2016/02/01] XeTeX character classes on input line 18674.
+Already applied: [0000/00/00] XeTeX character classes on input line 18707.
+Applying: [2017/04/15] Save language for hyphenation on input line 18731.
+Already applied: [0000/00/00] Save language for hyphenation on input line 18735
+.
+Skipping: [2021/06/01] Preload glyphtounicode on input line 18739.
+Applying: [0000/00/00] Preload glyphtounicode on input line 18746.
+Applying: [2018/04/01] UTF-8 default on input line 18752.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\utf8.def
+File: utf8.def 2022/06/07 v1.3c UTF-8 support
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\omsenc.dfu
+File: omsenc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\ot1enc.dfu
+File: ot1enc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+)
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\t1enc.dfu
+File: t1enc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01C4 (decimal 452)
+   defining Unicode char U+01C5 (decimal 453)
+   defining Unicode char U+01C6 (decimal 454)
+   defining Unicode char U+01C7 (decimal 455)
+   defining Unicode char U+01C8 (decimal 456)
+   defining Unicode char U+01C9 (decimal 457)
+   defining Unicode char U+01CA (decimal 458)
+   defining Unicode char U+01CB (decimal 459)
+   defining Unicode char U+01CC (decimal 460)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02D9 (decimal 729)
+   defining Unicode char U+02DB (decimal 731)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+1E0D (decimal 7693)
+   defining Unicode char U+1E1E (decimal 7710)
+   defining Unicode char U+1E1F (decimal 7711)
+   defining Unicode char U+1E25 (decimal 7717)
+   defining Unicode char U+1E30 (decimal 7728)
+   defining Unicode char U+1E31 (decimal 7729)
+   defining Unicode char U+1E37 (decimal 7735)
+   defining Unicode char U+1E8E (decimal 7822)
+   defining Unicode char U+1E8F (decimal 7823)
+   defining Unicode char U+1E43 (decimal 7747)
+   defining Unicode char U+1E45 (decimal 7749)
+   defining Unicode char U+1E47 (decimal 7751)
+   defining Unicode char U+1E5B (decimal 7771)
+   defining Unicode char U+1E63 (decimal 7779)
+   defining Unicode char U+1E6D (decimal 7789)
+   defining Unicode char U+1E90 (decimal 7824)
+   defining Unicode char U+1E91 (decimal 7825)
+   defining Unicode char U+1E9E (decimal 7838)
+   defining Unicode char U+1EF2 (decimal 7922)
+   defining Unicode char U+1EF3 (decimal 7923)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.dfu
+File: ts1enc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FEFF (decimal 65279)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+FEFF (decimal 65279)
+)
+Already applied: [0000/00/00] UTF-8 default on input line 18832.
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/revtex4\revtex4.cls
+Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count266
+\@tbpen=\count267
+\@arstrutbox@hline=\box51
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count268
+\output=\toks17
+\@protection@box=\box52
+\@topmark@saved=\toks18
+\footins@saved=\box53
+\pagesofar=\box54
+\footbox=\box55
+\pagegrid@col=\count269
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@affil=\count270
+\absbox=\box56
+\c@part=\count271
+\c@section=\count272
+\c@subsection=\count273
+\c@subsubsection=\count274
+\c@paragraph=\count275
+\c@subparagraph=\count276
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\c@figure=\count277
+\c@table=\count278
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count279
+)
+\widetext@top=\box57
+\widetext@bot=\box58
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/revtex4\revsymb.sty
+Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/revtex4\aps.rtx
+File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/revtex4\10pt.rtx
+File: 10pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Rollback for package 'amsmath' requested -> date 2020-02-02.
+         Best approximation is the release introduced on 2019-04-01.
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen140
+))
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count280
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count281
+\leftroot@=\count282
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count283
+\DOTSCASE@=\count284
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count285
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count286
+\dotsspace@=\muskip17
+\c@parentequation=\count287
+\dspbrk@lvl=\count288
+\tag@help=\toks20
+\row@=\count289
+\column@=\count290
+\maxfields@=\count291
+\andhelp@=\toks21
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks22
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/base\ansinew.def
+File: ansinew.def 2021/02/14 v1.3d Input encoding file
+))
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Rollback for package 'graphics' requested -> date 2020-02-02.
+         Best approximation is the release introduced on 2019-10-01.
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+\epsfxsize=\dimen151
+\epsfysize=\dimen152
+) (C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count292
+\float@exts=\toks27
+\float@box=\box61
+\@float@everytoks=\toks28
+\@floatcapt=\box62
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+
+LaTeX Warning: You have requested release `2020/10/01' of LaTeX,
+               but only release `2020-02-02' is available.
+
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count293
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count295
+\Hy@pagecounter=\count296
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count297
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4050.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count298
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen154
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count299
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring ON on input line 6069.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count300
+\c@Item=\count301
+\c@Hfootnote=\count302
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count303
+\c@bookmark@seq@number=\count304
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip55
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+\@indexfile=\write3
+\openout3 = `FinalReport.idx'.
+
+
+Writing index file FinalReport.idx
+
+LaTeX Warning: Unused global option(s):
+    [letter,scriptaddress].
+
+(FinalReport.aux)
+\openout1 = `FinalReport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+Class revtex4 Info: Unrecognized LaTeX tabular. Please update this document cla
+ss! (Proceeding with fingers crossed.) on input line 52.
+Class revtex4 Info: cite was not loaded (OK!) on input line 52.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 52.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count305
+\scratchdimen=\dimen157
+\scratchbox=\box63
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen158
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks30
+)
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\AtBeginShipoutBox=\box64
+
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+Package hyperref Info: Link coloring ON on input line 52.
+ (FinalReport.out) (FinalReport.out)
+\@outlinefile=\write4
+\openout4 = `FinalReport.out'.
+
+
+
+Class revtex4 Warning: Assuming \noaffiliation for Alex RosemanAdrian Hall.
+
+<figs/fig1.png, id=27, 614.295pt x 200.9106pt>
+File: figs/fig1.png Graphic file (type png)
+<use figs/fig1.png>
+Package pdftex.def Info: figs/fig1.png  used on input line 68.
+(pdftex.def)             Requested size: 510.0pt x 166.80173pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+
+
+(C:\Users\reiff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<figs/fig2_EMplots.png, id=29, 289.08pt x 289.08pt>
+File: figs/fig2_EMplots.png Graphic file (type png)
+<use figs/fig2_EMplots.png>
+Package pdftex.def Info: figs/fig2_EMplots.png  used on input line 92.
+(pdftex.def)             Requested size: 255.0pt x 254.9999pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 92--93
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figs/fig3_chi.png, id=30, 462.528pt x 346.896pt>
+File: figs/fig3_chi.png Graphic file (type png)
+<use figs/fig3_chi.png>
+Package pdftex.def Info: figs/fig3_chi.png  used on input line 102.
+(pdftex.def)             Requested size: 203.99689pt x 152.99994pt.
+<figs/fig3_cv.png, id=31, 462.528pt x 346.896pt>
+File: figs/fig3_cv.png Graphic file (type png)
+<use figs/fig3_cv.png>
+Package pdftex.def Info: figs/fig3_cv.png  used on input line 109.
+(pdftex.def)             Requested size: 203.99689pt x 152.99994pt.
+<figs/fig4_autocors.png, id=32, 289.08pt x 433.62pt>
+File: figs/fig4_autocors.png Graphic file (type png)
+<use figs/fig4_autocors.png>
+Package pdftex.def Info: figs/fig4_autocors.png  used on input line 116.
+(pdftex.def)             Requested size: 203.99689pt x 305.99327pt.
+<figs/fig4_xi.png, id=33, 462.528pt x 346.896pt>
+File: figs/fig4_xi.png Graphic file (type png)
+<use figs/fig4_xi.png>
+Package pdftex.def Info: figs/fig4_xi.png  used on input line 123.
+(pdftex.def)             Requested size: 203.99689pt x 152.99994pt.
+<figs/fig5_crit_exponents.png, id=34, 578.16pt x 578.16pt>
+File: figs/fig5_crit_exponents.png Graphic file (type png)
+<use figs/fig5_crit_exponents.png>
+Package pdftex.def Info: figs/fig5_crit_exponents.png  used on input line 130.
+(pdftex.def)             Requested size: 510.0pt x 509.9998pt.
+
+Class revtex4 Warning: Float cannot be placed.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 145--148
+ \OT1/cmr/m/it/9 Dimensional Model with an Order-Disorder
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 153.
+
+<figs/figA1.png, id=36, 462.528pt x 346.896pt>
+File: figs/figA1.png Graphic file (type png)
+<use figs/figA1.png>
+Package pdftex.def Info: figs/figA1.png  used on input line 157.
+(pdftex.def)             Requested size: 203.99689pt x 152.99994pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+[1{C:/Users/reiff/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <./figs
+/fig1.png> <./figs/fig2_EMplots.png>] [3 <./figs/fig3_chi.png> <./figs/fig3_cv.
+png>] [4 <./figs/fig4_autocors.png>] [5 <./figs/fig4_xi.png>] [6 <./figs/fig5_c
+rit_exponents.png>] [7 <./figs/figA1.png>] (FinalReport.aux)
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package rerunfilecheck Info: File `FinalReport.out' has not changed.
+(rerunfilecheck)             Checksum: A8D987F4B418893FC6B85D0CD6998E60;701.
+ ) 
+Here is how much of TeX's memory you used:
+ 10859 strings out of 475247
+ 161959 string characters out of 5757792
+ 1935801 words of memory out of 5000000
+ 32193 multiletter control sequences out of 15000+600000
+ 564128 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,6n,42p,882b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx9.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/reiff/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/reiff/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/reiff/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/reiff/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/
+reiff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9
+.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/Users/reiff/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/reiff/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on FinalReport.pdf (7 pages, 411810 bytes).
+PDF statistics:
+ 154 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+
