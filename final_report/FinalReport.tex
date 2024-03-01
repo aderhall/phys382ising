@@ -66,7 +66,7 @@ urlcolor=black,%
 \begin{figure*}[t]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{figs/fig1.png}
-		\caption{a. diagram of the lattice. We use N=100 throughout. $E_{i, j}$ is neighbor spin interaction - adjacents only, wraps (each site has 4 neighbors). "a" is lattice distance (1), J = 1, spin = $\pm 1$. b. Snapshots after ~10 million simulation steps at the given temperature, showing typical states below, near, and above Tc. Red is spin up, blue spin down.}
+		\caption{a. A diagram of the square lattice. We use lattice size $N = 100$, lattice distance $a = 1$, interaction energy $J = 1$, and spin = $\sigma = \pm 1$ throughout. $E_{i, j}$ is the interaction energy between adjacent spin sites (the lattice wraps around such that each site has 4 neighbors). b. Snapshots after around ten million simulation steps at the given temperature, showing typical states below, near, and above Tc. Red squares have spin up, blue squares spin down.}
 		\label{fig:fig1}
 	\end{center}
 \end{figure*}
@@ -102,9 +102,9 @@ At each step:
 	\end{enumerate}
 \end{enumerate}
 
-In the limit of large numbers of simulation steps, this algorithm faithfully recreates the Gibbs distribution, with a few caveats.
+In the limit of large numbers of simulation steps, this algorithm faithfully recreates the Gibbs distribution. With finite simulation time, one must take care that the simulation converges:
 
-First, convergence. Metropolis sampling traverses state space at a finite speed, here determined by flipping at maximum ten percent of all lattice sites at each step. However, the lattice must be initialized to some state, which could have arbitrarily low probability. It takes the simulation some time to leave behind initial conditions and arrive at a representative state. 
+Metropolis sampling traverses state space at a finite speed, here determined by flipping at maximum ten percent of all lattice sites at each step. However, the lattice must be initialized to some state, which could have arbitrarily low probability. It takes the simulation some time to leave behind initial conditions and arrive at a representative state. 
 
 This process can be sped up via annealing, starting at a high temperature and magnetic field, and then slowly lowering them to the experimental values. The high temperature adds energy to the lattice, lowering the pull of local minima to allow the lattice to find overall lower-energy states. The initial magnetic field breaks the symmetry between positive and negative spin, pulling the lattice away from configurations with large magnetic domains and towards ultimately lower-energy states. As an example, consider a lattice initialized to be split in half down the middle, with the left half spin up, and the right half spin-down. This state is significantly higher-energy than a lattice of all spin up, but reaching the uniform lattice requires passing through less-probably states. At low temperatures, this may not be possible, or might take an arbitrarily large number of steps. Similarly, with no external field, the two large domains might each grow in some places while ceding ground in others. 
 
@@ -113,6 +113,26 @@ Annealing helps prevent these situations. In our simulations, we anneal from $T 
 The other side of convergence is that Metropolis sampling produces data which is locally correlated: the state at each simulation step is similar to the states which precede and follow it. In this experiment, we take data for a total of 200,000 steps (after annealing and burn-in). This decision is explained in Appendix A.
 
 \textbf{Data and Analysis:}
+
+We calculate three quantities during the simulation. The first is expected energy per lattice site
+
+\begin{equation}
+	\label{eq:e_average}
+	\submin{E} = \frac{J}{N^2}\sum_{i, j = 1}^{N} \sum_{k} \sigma_{i, j} \sigma_k
+\end{equation}
+
+where $\sigma_{i, j}$ is the dimensionless spin of the lattice site at row $i$, column $j$, and $\sigma_k$ are the spins of its four neighbors. $\submin{E}$ is a straightforward measure of energy, with the number of lattice sites factored out so as not to scale with lattice size (as we are interested in the $N\rightarrow\infty$ limit). For figures, we use a dimensionless $\submin{E}$, with units of $[J]$.
+
+We calculate a value for $\submin{E}$ over the whole lattice at each simulation step, then extract the mean and standard deviation over the whole simulation at a given temperature (equivalent to an expected value from the Gibbs distribution because the Metropolis-Hastings algorithm spends time in each state proportionate to its probability). In this experiment, we extract the means and standard deviations from one hundred simulation trials, then generate final values for $\submin{E}_T$ by averaging the means from all one hundred simulations at a given temperature together. We use the standard error of this mean to generate uncertainties, considering each simulation a separate measurement.
+
+Similarly, the expected magnetization per lattice site
+
+\begin{equation}
+	\label{eq:e_average}
+	\submin{M} = \frac{J}{N^2}\sum_{i, j = 1}^{N} \sigma_{i, j}
+\end{equation}
+
+[[the final directly-calculated quantity is...]]
 
 \begin{figure}[h]
 	\begin{center}
