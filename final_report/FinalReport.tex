@@ -94,7 +94,7 @@ The model's behavior at temperatures near $T_c$ has been the subject of extensiv
 			Quantity & Power Law & Predicted Exponent \\
 			\hline
 			$C_v$ & $|t|^{-\alpha}$ & $\alpha = 0$ \\
-			$M$ & $|t|^\beta$ & $\beta \approx 1/8$ \\
+			$|M|$ & $|t|^\beta$ & $\beta \approx 1/8$ \\
 			$\chi$ & $|t|^{-\gamma}$ & $\gamma \approx 7/4$ \\
 			$\xi$ & $|t|^{-\nu}$ & $\nu \approx 1$ \\
 			$\submin{\sigma(0)\sigma(x)}$ & $|x|^{-d + 2 - \eta}$ & $ \eta \approx 1/4$ \\
@@ -108,13 +108,13 @@ The model's behavior at temperatures near $T_c$ has been the subject of extensiv
 These critical exponents also obey certain identities [[source?]]:
 
 \begin{equation}
-	\text{Rushbrooke’s Identity: } \alpha + 2\beta + \gamma = 2 \label{eq:rushbrooke}
+	\text{Rushbrooke's Identity: } \alpha + 2\beta + \gamma = 2 \label{eq:rushbrooke}
 \end{equation}
 \begin{equation}
-	\text{Josephson’s Identity: } 2 - \alpha = d * \nu \label{eq:josephson}
+	\text{Josephson's Identity: } 2 - \alpha = d * \nu \label{eq:josephson}
 \end{equation}
 \begin{equation}
-	\text{Fisher’s Identity: } \gamma = (2 - \eta)\nu \label{eq:fisher}
+	\text{Fisher's Identity: } \gamma = (2 - \eta)\nu \label{eq:fisher}
 \end{equation}
 
 \textbf{Methods:} We simulate the 2d Ising Model on an $N$ by $N$ square lattice using the Metropolis-Hastings algorithm, a Markov chain Monte Carlo method which enables sampling when one knows only relative, rather than absolute, probabilities. The lattice, along with representative lattice configurations above, near, and below critical temperature, is depicted in \autoref{fig:fig1}.
@@ -129,7 +129,7 @@ At each step:
 	\item We calculate the overall change in energy from flipping the spin of each selected particle, $\Delta E_i = 2(J\sigma_i(\sum_j\sigma_j) + B\sigma_i)$, where $\sigma_i$ is the flipped spin of the particle, and $\sigma_j$ are the spins of the particle's four neighbors.
 	\item The spin at each selected lattice site is or is not flipped depending on $\Delta E_i$ (the calculation is independent for each site):
 	\begin{enumerate}
-		\item if $\Delta E < 0$, the spin is flipped.
+		\item if $\Delta E < 0$, the spin is flipped
 		\item if $\Delta E > 0$, the spin is flipped with probability $e^{-\Delta E_i/(k_BT)}$
 	\end{enumerate}
 \end{enumerate}
@@ -146,35 +146,43 @@ The other side of convergence is that Metropolis sampling produces data which is
 
 \textbf{Data and Analysis:}
 
-We calculate three quantities during the simulation. The first is expected energy per lattice site
-
+We calculate three quantities from the lattice directly. The first is expected energy per lattice site
 \begin{equation}
 	\label{eq:e_average}
 	\submin{E} = \frac{J}{N^2}\sum_{i, j = 1}^{N} \sum_{k} \sigma_{i, j} \sigma_k
 \end{equation}
-
-where $\sigma_{i, j}$ is the dimensionless spin of the lattice site at row $i$, column $j$, and $\sigma_k$ are the spins of its four neighbors. $\submin{E}$ is a straightforward measure of energy, with the number of lattice sites factored out so as not to scale with lattice size (as we are interested in the $N\rightarrow\infty$ limit). For figures, we use a dimensionless $\submin{E}$, with units of $[J]$.
+where $\sigma_{i, j}$ is the dimensionless spin of the particle at row $i$, column $j$, and $\sigma_k$ are the spins of its four neighbors. $\submin{E}$ is a straightforward measure of energy, with the number of lattice sites factored out so as not to scale with lattice size (as we are interested in the $N\rightarrow\infty$ limit). For figures, we use a dimensionless $\submin{E}$, with units of $J$.
 
 We calculate a value for $\submin{E}$ over the whole lattice at each simulation step, then extract the mean and standard deviation over the whole simulation at a given temperature (equivalent to an expected value from the Gibbs distribution because the Metropolis-Hastings algorithm spends time in each state proportionate to its probability). In this experiment, we extract the means and standard deviations from one hundred simulation trials, then generate final values for $\submin{E}_T$ by averaging the means from all one hundred simulations at a given temperature together. We use the standard error of this mean to generate uncertainties, considering each simulation a separate measurement.
 
-Similarly, the expected magnetization per lattice site
-
+Similarly, the absolute expected magnetization per lattice site
 \begin{equation}
-	\label{eq:e_average}
-	\submin{M} = \frac{J}{N^2}\sum_{i, j = 1}^{N} \sigma_{i, j}
+	\label{eq:m_average}
+	\submin{M} = \frac{1}{N^2}\sum_{i, j = 1}^{N} \sigma_{i, j}
 \end{equation}
-
-[[the final directly-calculated quantity is...]]
+where $\sigma_{i, j}$ is the dimensionless spin of particle at row $i$, column $j$. As we take spin and lattice distance to be dimensionless and magnitude one, $\submin{M}$ is unitless. Like $\submin{E}$, it is a straightforward physical measure of magnetization, with the lattice size factored out. As with $\submin{E}$, we calculated expected values over each simulation, then use the mean of these 100 expectation values for final $E$. Uncertainties are calculated as the standard error of this mean. $\submin{E}$ and $\submin{M}$ as functions of $T$ are shown in \autoref{fig:fig2}.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.5\textwidth]{figs/fig2_EMplots.png}
-		\caption{Mean energy (top) and absolute magnetization (bottom) per lattice site as computed by MCMC simulation at a range of temperatures. Data is drawn from 97 independent simulations: each data point is the average value of $\left\langle M \right\rangle$ over all simulations; each standard error is the standard error of the mean of $\left\langle M \right\rangle$ over all simulations, treating each $\left\langle M \right\rangle$ as an independent measurement. Analytic Tc (red) and analytic curves (green) plotted for comparison. At first glance, our system appears to reach phase transition at lower temperature than the analytic $T_c$.}
+		\caption{Mean energy (top) and absolute magnetization (bottom) per lattice site as computed by MCMC simulation at a range of temperatures. Data is drawn from 100 independent simulations: each data point is the average value of $|M|$ over all simulations; each standard error is the standard error of the mean of $|M|$ over all simulations, treating each $|M|$ as an independent measurement. Analytic $T_c$ (red) and analytic curves for $E$ and $M$ (green) as $N\rightarrow\infty$ are plotted for comparison. At first glance, our system appears to reach phase transition at lower temperature than the analytic $T_c$.}
 		\label{fig:fig2}
 	\end{center}
 \end{figure}
 
+From $\submin{E}$ and $\submin{M}$, we calculate specific heat $c_V$ and magnetic susceptibility $\chi$, using the variance of $E$ and $M$ respectively. It can be shown using the partition function $\mathcal{Z} = \sum_{i} e^{-\frac{E_i}{k_BT}}$ that
+\begin{equation}
+	\label{eq:cv}
+	c_V \equiv \frac{\partial \submin{E_{\text{tot}}}}{\partial T} = \frac{1}{k_BT^2}(\submin{E_{\text{tot}}^2} - \submin{E_{\text{tot}}}^2)
+\end{equation}
+where $E_{\text{tot}}$ is the total lattice energy. We plot $c_V$ per lattice site, with units of $k_B$. We calculate $c_V$ using the variance of $E$ calculated over simulation steps. As with $\submin{E}$ and $\submin{M}$, we then calculate a final value by averaging over all 100 simulations, and calculate uncertainty as the standard error of this mean.
 
+Similarly, it can be shown that
+\begin{equation}
+	\label{eq:chi}
+	\chi \equiv \frac{\partial \submin{M_{\text{tot}}}}{\partial T} = \frac{1}{k_BT}(\submin{M_{\text{tot}}^2} - \submin{M_{\text{tot}}}^2)
+\end{equation}
+where $M_{\text{tot}}$ is the total lattice magnetization. Similar to $c_V$, we plot $\chi$ per lattice site, with units of $J^{-1}$. As with $c_V$, we use the variance in $M$ calculated over all lattice steps. As with $\submin{E}$, $\submin{M}$, and $c_V$, we find final values and uncertainties by averaging over multiple simulations.
 
 \begin{figure}[h]
 	\begin{center}
