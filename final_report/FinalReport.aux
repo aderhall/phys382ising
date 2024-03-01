@@ -1,10 +1,14 @@
 \relax 
+\providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -14,9 +18,9 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \bibcite{Onsager}{{1}{}{{}}{{}}}
 \global \chardef \firstnote@num1\relax 
-\providecommand\NAT@force@numbers{}\NAT@force@numbers
 \bibstyle{unsrt}
-\newlabel{LastPage}{{}{0}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\newlabel{LastPage}{{}{1}{}{page.1}{}}
 \newlabel{FirstPage}{{}{1}{}{Doc-Start}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {}Introduction}{1}{section*.1}\protected@file@percent }
 \newlabel{eq:hamiltonian}{{1}{1}{}{equation.0.1}{}}
@@ -27,7 +31,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {}References}{1}{section*.5}\protected@file@percent }
 \newlabel{LastBibItem}{{1}{1}{}{section*.5}{}}
 \@writefile{toc}{\appendix }
-\@writefile{toc}{\contentsline {section}{\numberline {}\\Appendix A: Convergence}{1}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {}Appendix A: Convergence}{1}{section*.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces a. diagram of the lattice. We use N=100 throughout. $E_{i, j}$ is neighbor spin interaction - adjacents only, wraps (each site has 4 neighbors). "a" is lattice distance (1), J = 1, spin = $\pm 1$. b. Snapshots after \nobreakspace  {}10 million simulation steps at the given temperature, showing typical states below, near, and above Tc. Red is spin up, blue spin down.}}{2}{figure.1}\protected@file@percent }
 \newlabel{fig:fig1}{{1}{2}{a. diagram of the lattice. We use N=100 throughout. $E_{i, j}$ is neighbor spin interaction - adjacents only, wraps (each site has 4 neighbors). "a" is lattice distance (1), J = 1, spin = $\pm 1$. b. Snapshots after ~10 million simulation steps at the given temperature, showing typical states below, near, and above Tc. Red is spin up, blue spin down}{figure.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Mean energy (top) and absolute magnetization (bottom) per lattice site as computed by MCMC simulation at a range of temperatures. Data is drawn from 97 independent simulations: each data point is the average value of $\left \langle M \right \rangle $ over all simulations; each standard error is the standard error of the mean of $\left \langle M \right \rangle $ over all simulations, treating each $\left \langle M \right \rangle $ as an independent measurement. Analytic Tc (red) and analytic curves (green) plotted for comparison. At first glance, our system appears to reach phase transition at lower temperature than the analytic $T_c$.}}{2}{figure.2}\protected@file@percent }
@@ -44,3 +48,4 @@
 \newlabel{fig:fig5}{{7}{6}{Power law fits for the critical exponents for $c_V$ ($\alpha $) (upper left), $\chi $ ($\gamma $) (upper right), $|M|$ ($\beta $) (lower left), and $\xi $ ($\nu $) (lower right). We attempt to show $\alpha = 0$ by successfully fitting a logarithmic function to $c_V$. In each graph, the x-axis is the normalized temperature $t = \frac {T - T_c}{T_c}$, where $T_c$ is the analytic value of $T_c$. As before, only data from the shaded regions was used for fits. We find the following values: $\gamma = 1.40 \pm .01$, $\beta = 0.103 \pm .002$, $\nu = 0.49 \pm .01$. All critical exponents are, of course, unitless. We have not checked identities because these values are clearly broken, $\nu $ especially (see abstract for details)}{figure.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces $\chi $ values calculated with data from a simulation of 2,000,000 analyze steps. The total 2,000,000 steps were split as evenly as possible into groups of $n_{steps}$ (x axis), and variance in M was calculated across each group. Each data point is the average variance over all such groups.}}{7}{figure.8}\protected@file@percent }
 \newlabel{fig:figA1}{{8}{7}{$\chi $ values calculated with data from a simulation of 2,000,000 analyze steps. The total 2,000,000 steps were split as evenly as possible into groups of $n_{steps}$ (x axis), and variance in M was calculated across each group. Each data point is the average variance over all such groups}{figure.8}{}}
+\gdef \@abspage@last{7}
