@@ -1,5 +1,5 @@
 \RequirePackage[2020-02-02]{latexrelease}
-\documentclass[letter,scriptaddress,twocolumn, prl]{revtex4}
+\documentclass[letter,scriptaddress,twocolumn, prl,nofootinbib]{revtex4}
 
 \usepackage{amsmath}%,amssymb} 
 \usepackage{makeidx}
@@ -73,6 +73,7 @@ urlcolor=black,%
 
 \textbf{Introduction:} The Ising model is an idealized model of ferromagnetism and notably one of the few models in statistical mechanics with an exact analytical solution. In the model, a solid material is represented as a regular $d$-dimensional lattice of spin states, each of which can take one of two values ($\pm 1$). The spin states interact with their neighbors and with an external magnetic field according to the Hamiltonian
 \begin{equation}
+	\label{eq:hamiltonian}
 	H = -J \sum_{\langle i, j \rangle} \sigma_i \sigma_j - B \sum_i \sigma_i
 \end{equation}
 where $\sigma_i$ is the magnetic moment at lattice site $i$, $J$ is the interaction energy, $B$ is the magnetic field strength, and $\langle i, j \rangle$ denotes all pairs of neighboring lattice sites.
@@ -117,32 +118,22 @@ These critical exponents also obey certain identities [[source?]]:
 	\text{Fisher's Identity: } \gamma = (2 - \eta)\nu \label{eq:fisher}
 \end{equation}
 
-\textbf{Methods:} We simulate the 2d Ising Model on an $N$ by $N$ square lattice using the Metropolis-Hastings algorithm, a Markov chain Monte Carlo method which enables sampling when one knows only relative, rather than absolute, probabilities. The lattice, along with representative lattice configurations above, near, and below critical temperature, is depicted in \autoref{fig:fig1}.
-
-Throughout the experiment, we use a lattice of size N = 100 with periodic boundary conditions, such that the one-hundredth lattice site in a given row or column is considered adjacent to the first. [The decision to use N = 100 is explained during analysis of correlation length $\xi$.]
-
-The Metropolis-Hastings algorithm generates samples from a distribution via a random walk through state space (here, overall lattice configurations), lingering on states for simulation steps proportional to their probabilities. In this experiment, we use Metropolis sampling to sample from the Gibbs distribution, in which the probability of a state with energy E is proportional to $e^{-\frac{E}{k_BT}}$. The specific algorithm we use is as follows.
-
-At each step:
+\textbf{Methods:} We simulate the 2d Ising Model on an $N$ by $N$ square lattice using the Metropolis-Hastings algorithm, a Markov chain Monte Carlo method which allows random sampling of a state space when only the relative probability of each state is known. We simulate a random walk through the state space of lattice configurations in which each configuration is visited with a frequency proportional to its relative probability, sampled from the Gibbs distribution
+\begin{equation}
+	P \propto e^{-\frac{E}{k_B T}}
+\end{equation}
+where $E$ is the energy of the configuration. Throughout the experiment, we use a lattice of size N = 100 with periodic boundary conditions, so that lattice sites 1 and 100 are considered adjacent\footnote{The decision to use N = 100 is explained during analysis of correlation length $\xi$.}. The lattice is initialized to a random configuration, after which the algorithm proceeds as follows. At each step:
 \begin{enumerate}
-	\item A percentage of lattice sites (i.e. particles) are selected randomly (throughout this experiment, this parameter was set to $10\%$).
-	\item We calculate the overall change in energy from flipping the spin of each selected particle, $\Delta E_i = 2(J\sigma_i(\sum_j\sigma_j) + B\sigma_i)$, where $\sigma_i$ is the flipped spin of the particle, and $\sigma_j$ are the spins of the particle's four neighbors.
-	\item The spin at each selected lattice site is or is not flipped depending on $\Delta E_i$ (the calculation is independent for each site):
-	\begin{enumerate}
-		\item if $\Delta E < 0$, the spin is flipped
-		\item if $\Delta E > 0$, the spin is flipped with probability $e^{-\Delta E_i/(k_BT)}$
-	\end{enumerate}
+	\item 10\% of lattice sites are selected randomly.
+	\item The change in energy $\Delta E_i$ due to flipping the spin of each selected site $i$ is computed according to \autoref{eq:hamiltonian}.
+	\item The spin at each selected lattice site is flipped with probability $1$ if $\Delta E_i < 0$, and with probability $e^{-\Delta E_i/(k_BT)}$ otherwise.
 \end{enumerate}
 
-In the limit of large numbers of simulation steps, this algorithm faithfully recreates the Gibbs distribution. With finite simulation time, one must take care that the simulation converges:
+In the limit of large numbers of simulation steps, this algorithm faithfully recreates the Gibbs distribution, with a few caveats\footnote{These caveats and the steps taken to mitigate them are described in more detail in Appendix A}.
 
-Metropolis sampling traverses state space at a finite speed, here determined by flipping at maximum ten percent of all lattice sites at each step. However, the lattice must be initialized to some state, which could have arbitrarily low probability. It takes the simulation some time to leave behind initial conditions and arrive at a representative state. 
+First, the process must be allowed to converge to the typical set of states. The Metropolis-Hastings algorithm traverses state space at a finite speed, here limited by the $10\%$ of sites considered at each step. However, the initial lattice configuration will not generally be one of high probability; therefore, we must allow sufficient steps for the simulation to arrive at a representative state. We accelerate this process by slowly annealing the lattice, starting with a high temperature ($T_\text{anneal} = 4 \frac{J}{k_B}$) and nonzero external field ($B_\text{anneal} = 0.5 J$). The high temperature discourages the random walk from getting trapped in unfavorable local energy minima, and the external field encourages symmetry breaking at low temperatures where the most favorable configurations are highly magnetized.
 
-This process can be sped up via annealing, starting at a high temperature and magnetic field, and then slowly lowering them to the experimental values. The high temperature adds energy to the lattice, lowering the pull of local minima to allow the lattice to find overall lower-energy states. The initial magnetic field breaks the symmetry between positive and negative spin, pulling the lattice away from configurations with large magnetic domains and towards ultimately lower-energy states. As an example, consider a lattice initialized to be split in half down the middle, with the left half spin up, and the right half spin-down. This state is significantly higher-energy than a lattice of all spin up, but reaching the uniform lattice requires passing through less-probably states. At low temperatures, this may not be possible, or might take an arbitrarily large number of steps. Similarly, with no external field, the two large domains might each grow in some places while ceding ground in others. 
-
-Annealing helps prevent these situations. In our simulations, we anneal from $T = 4 J$ and $B = .5 J$, linearly decreasing $T$ and $B$ to the experimental temperature and zero, respectively, over 3,000 steps. We then wait another 5000 steps of "burn-in time," to allow transients from the extra temperature and field to dissipate. This does introduce artifacts into the simulation data: magnetization $M$ is somewhat more likely to be positive than negative, especially at low temperatures. However, this effect is ultimately irrelevant: we use only the magnitude of $M$.
-
-The other side of convergence is that Metropolis sampling produces data which is locally correlated: the state at each simulation step is similar to the states which precede and follow it. In this experiment, we take data for a total of 200,000 steps (after annealing and burn-in). This decision is explained in Appendix A.
+Second, lattice configurations in consecutive simulation steps are highly correlated, since each subsequent state is generated by modifying the previous one. This can mean that the sampling uncertainty of the variance in a given quantity will generally be greater than the corresponding mean. We determined that analyzing $200,000$ steps (after achieving convergence) was sufficient to obtain accurate measurements\footnote{See appendix A.}.
 
 \textbf{Data and Analysis:}
 
@@ -228,6 +219,10 @@ where $M_{\text{tot}}$ is the total lattice magnetization. Similar to $c_V$, we 
 
 \appendix
 \section{Appendix A: Convergence}
+
+MOVED FROM METHODS: This process can be sped up via annealing, starting at a high temperature and magnetic field, and then slowly lowering them to the experimental values. The high temperature adds energy to the lattice, lowering the pull of local minima to allow the lattice to find overall lower-energy states. The initial magnetic field breaks the symmetry between positive and negative spin, pulling the lattice away from configurations with large magnetic domains and towards ultimately lower-energy states. As an example, consider a lattice initialized to be split in half down the middle, with the left half spin up, and the right half spin-down. This state is significantly higher-energy than a lattice of all spin up, but reaching the uniform lattice requires passing through less-probably states. At low temperatures, this may not be possible, or might take an arbitrarily large number of steps. Similarly, with no external field, the two large domains might each grow in some places while ceding ground in others. 
+
+Annealing helps prevent these situations. In our simulations, we anneal from $T = 4 J$ and $B = .5 J$, linearly decreasing $T$ and $B$ to the experimental temperature and zero, respectively, over 3,000 steps. We then wait another 5000 steps of "burn-in time," to allow transients from the extra temperature and field to dissipate. This does introduce artifacts into the simulation data: magnetization $M$ is somewhat more likely to be positive than negative, especially at low temperatures. However, this effect is ultimately irrelevant: we use only the magnitude of $M$.
 
 \begin{figure}[h]
 	\begin{center}
