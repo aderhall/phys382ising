@@ -195,17 +195,10 @@ The analytical solution gives that $\chi$ and $c_V$ vary according to power laws
 We calculated spatial autocorrelation 
 \begin{equation}
 	\label{autocor}
-	\submin{\sigma(0)\sigma(x)} = \frac{1}{N}\sum_{j}
+	\submin{\sigma(0)\sigma(x)} = \frac{1}{N}\sum_{j} [[NOT DONE]]
 \end{equation}
 
 Unlike $\submin{E}$ and $\submin{M}$, we calculate the autocorrelation not as an average over all simulation steps, but instead using only the final lattice state. This is purely for expediency: calculating autocorrelations over all distances is computationally expensive and mostly unnecessary, as correlations by definition persist over simulation steps. Still, we expect autocorrelation values closer to $T_c$ to be more uncertain, since near $T_c$ the typical set is much larger and any one lattice configuration is less representative of the whole. This increase in uncertainty is naturally incorporated into the data: we use the mean of autocorrelation across many simulations, and calculate uncertainty as the standard error of this mean.
-
-We use autocorrelation to calculate the correlation length $\xi$, a characteristic length scale given by
-\begin{equation}
-	\label{eq:xi}
-	\submin{\sigma(0)\sigma(x)} \propto e^{-x/\xi}
-\end{equation}
-where $\xi$ depends on temperature.
 
 \begin{figure}[h]
 	\begin{center}
@@ -214,6 +207,16 @@ where $\xi$ depends on temperature.
 		\label{fig:fig4a}
 	\end{center}
 \end{figure}
+
+We use autocorrelation to calculate the correlation length $\xi$, a characteristic length scale given by
+\begin{equation}
+	\label{eq:xi}
+	\submin{\sigma(0)\sigma(x)} \propto e^{-x/\xi}
+\end{equation}
+where $\xi$ depends on temperature. \autoref{fig:fig4a} depicts some of these calculations, in which we fit exponential decay to autocorrelation as a function of distance. [[how did this go for us?]]
+
+[[How do we do uncertainty on $\xi$? One xi per sim is probably easiest?]]
+
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.4\textwidth]{figs/fig4_xi.png}
@@ -221,6 +224,9 @@ where $\xi$ depends on temperature.
 		\label{fig:fig4b}
 	\end{center}
 \end{figure}
+
+[[something here about fig 5 (crit exponents)]].
+
 \begin{figure*}[h]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{figs/fig5_crit_exponents.png}
@@ -228,6 +234,8 @@ where $\xi$ depends on temperature.
 		\label{fig:fig5}
 	\end{center}
 \end{figure*}
+
+\textbf{Discussion:}
 
 \textbf{Acknowledgements:}
 	Prof. Navon, Prof. Newburgh, HongJoon
