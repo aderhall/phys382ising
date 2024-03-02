@@ -12,4 +12,5 @@ ising_lattice_lib\.so
 final_report/*.*
 draft_report/*.*
 !final_report/*.tex
+!final_report/*.bib
 !draft_report/*.tex
