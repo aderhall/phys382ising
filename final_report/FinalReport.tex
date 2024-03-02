@@ -166,14 +166,14 @@ Our logarithmic fits for $c_V \propto \log |t|$ yield estimates of $T_c$ at $2.2
 	\end{center}
 \end{figure}
 
-We calculated spatial autocorrelation 
+We compute the spatial autocorrelation in spin states $\submin{\sigma_i\sigma_{i + x}}$ in the final lattice configuration of $20$ simulations for each temperature:
 \begin{equation}
 	\label{autocor}
-	\submin{\sigma(0)\sigma(x)} = \frac{1}{N^2}\sum_{i, j} (\sigma_{(i, j)} - \bar{\sigma}_i)(\sigma_{(i, j + x)} - \bar{\sigma}_i)
+	\submin{\sigma_i\sigma_{i + x}} = \frac{1}{N^2}\sum_{i, j} (\sigma_{(i, j)} - \bar{\sigma}_i)(\sigma_{(i, j + x)} - \bar{\sigma}_i)
 \end{equation}
-where the sum is taken over all rows i and columns j, or over all columns j and rows i (the two quantities should be equivalent on an isotropic lattice). $\bar{\sigma}_i$ is the average spin in row/column $i$, and $j + x$ wraps around the lattice (i.e. is taken modulo $N$).
+where the $i$ and $j$ vary over all rows and columns of the lattice. $\bar{\sigma}_i$ is the average spin in row/column $i$, and $j + x$ wraps around the lattice (i.e. is taken modulo $N$). For each temperature, we compute the mean autocorrelation across the $20$ trials and fit an exponential decay $\submin{\sigma_i\sigma_{i + x}} \propto e^{-x/\xi}$ (\autoref{fig:fig4a}), computing a value for the uncertainty in the length constant $\xi$ according to the variance in the autocorrelation across all trials. Here we take $\xi$ as the correlation length at that temperature. Correlation length clearly peaks near $T_c$ (\autoref{fig:fig4b}) as predicted analytically \cite{Onsager}. We fit a power law $\xi \propto |t|^{-\nu}$ to the data in the $t > 0$ portion of the annulus, with $T_c$ and $\nu$ as free parameters. We find $T_c = 2.32 \pm 0.03$ and $\nu = 0.6 \pm 0.1$, which deviate significantly from the analytical predictions $T_c \approx 2.269$, $\nu = 1$.
 
-Unlike $\submin{E}$ and $\submin{M}$, we calculate the autocorrelation not as an average over all simulation steps, but instead using only the final lattice state. This is purely for expediency: calculating autocorrelations over all distances is computationally expensive and mostly unnecessary, as correlations by definition persist over simulation steps. Still, we expect autocorrelation values closer to $T_c$ to be more uncertain, since near $T_c$ the typical set is much larger and any one lattice configuration is less representative of the whole. This increase in uncertainty is naturally incorporated into the data: we use the mean of autocorrelation across many simulations, and calculate uncertainty as the standard error of this mean.
+As an alternative method for determining the critical exponents $\alpha$, $\gamma$, $\beta$, and $\nu$, we plot $c_V$, $\log \chi$, and $\log |\submin{M}|$, and $\log \xi$ against $\log |t|$ (\autoref{fig:fig5}). In the case of $c_V$, the linearity with respect to $\log t$ supports the prediction $\alpha = 0$. For the latter three quantities, the transformed data yields a value for the corresponding critical exponent in the slope obtained by linear regression. We find $\gamma = 1.67 \pm .02$, $\beta = 0.097 \pm .001$, and $\nu = 0.76 \pm .04$. The reduced $\chi^2$ for the linear fit of $c_V$ is $1.553$.
 
 \begin{figure}[h]
 	\begin{center}
@@ -183,15 +183,6 @@ Unlike $\submin{E}$ and $\submin{M}$, we calculate the autocorrelation not as an
 	\end{center}
 \end{figure}
 
-We use autocorrelation to calculate the correlation length $\xi$, a characteristic length scale given by
-\begin{equation}
-	\label{eq:xi}
-	\submin{\sigma(0)\sigma(x)} \propto e^{-x/\xi}
-\end{equation}
-where $\xi$ depends on temperature. \autoref{fig:fig4a} depicts some of these calculations, in which we fit exponential decay to autocorrelation as a function of distance. [[how did this go for us?]]
-
-[[How do we do uncertainty on $\xi$?]]
-
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.5\textwidth]{figs/fig4_xi.png}
@@ -200,14 +191,10 @@ where $\xi$ depends on temperature. \autoref{fig:fig4a} depicts some of these ca
 	\end{center}
 \end{figure}
 
-[[fig 4b description]]
-
-[[something here about fig 5 (crit exponents)]].
-
 \begin{figure*}[h]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{figs/lastfig.png}
-		\caption{Power law fits for the critical exponents for \textbf{a}. $c_V$ ($\alpha$), \textbf{b}. $\chi$ ($\gamma$), \textbf{c}. $|M|$ ($\beta$), and \textbf{d}. $\xi$ ($\nu$). We attempt to show $\alpha = 0$ by successfully fitting a logarithmic function to $c_V$. In each graph, the x-axis is $-\log{|t|}$, where normalized temperature $t = \frac{T - T_c}{T_c}$, and $T_c$ is the analytical value of $T_c$. We use data from temperatures above $T_c$ in all plots except \textbf{c}, as $\beta$ is not defined above $T_c$. As before, only data from the shaded regions was used for fits. We find the following values: $\gamma = 1.67 \pm .03$, $\beta = 0.097 \pm .001$, $\nu = 0.76 \pm .04$. For the fit in \textbf{a}, we calculated reduced $\chi^2 = 1.553$.}
+		\caption{Power law fits for the critical exponents for \textbf{a}. $c_V$ ($\alpha$), \textbf{b}. $\chi$ ($\gamma$), \textbf{c}. $|M|$ ($\beta$), and \textbf{d}. $\xi$ ($\nu$). We attempt to show $\alpha = 0$ by successfully fitting a logarithmic function to $c_V$. In each graph, the x-axis is $-\log{|t|}$, where normalized temperature $t = \frac{T - T_c}{T_c}$, and $T_c$ is the analytical value of $T_c$. We use data from temperatures above $T_c$ in all plots except \textbf{c}, as $\beta$ is not defined above $T_c$. As before, only data from the shaded regions was used for fits. We find the following values: $\gamma = 1.67 \pm .02$, $\beta = 0.097 \pm .001$, $\nu = 0.76 \pm .04$. For the fit in \textbf{a}, we calculated reduced $\chi^2 = 1.553$.}
 		\label{fig:fig5}
 	\end{center}
 \end{figure*}
