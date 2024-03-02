@@ -176,8 +176,9 @@ We use only data from the shaded regions for the fits, where the inner radius is
 We calculated spatial autocorrelation 
 \begin{equation}
 	\label{autocor}
-	\submin{\sigma(0)\sigma(x)} = \frac{1}{N}\sum_{j} [[NOT DONE]]
+	\submin{\sigma(0)\sigma(x)} = \frac{1}{N^2}\sum_{i, j} (\sigma_{(i, j)} - \bar{\sigma}_i)(\sigma_{(i, j + x)} - \bar{\sigma}_i)
 \end{equation}
+where the sum is taken over all rows i and columns j, or over all columns j and rows i (the two quantities should be equivalent on an isotropic lattice). $\bar{\sigma}_i$ is the average spin in row/column $i$, and $j + x$ wraps around the lattice (i.e. is taken modulo $N$).
 
 Unlike $\submin{E}$ and $\submin{M}$, we calculate the autocorrelation not as an average over all simulation steps, but instead using only the final lattice state. This is purely for expediency: calculating autocorrelations over all distances is computationally expensive and mostly unnecessary, as correlations by definition persist over simulation steps. Still, we expect autocorrelation values closer to $T_c$ to be more uncertain, since near $T_c$ the typical set is much larger and any one lattice configuration is less representative of the whole. This increase in uncertainty is naturally incorporated into the data: we use the mean of autocorrelation across many simulations, and calculate uncertainty as the standard error of this mean.
 
@@ -219,7 +220,7 @@ where $\xi$ depends on temperature. \autoref{fig:fig4a} depicts some of these ca
 \textbf{Discussion:}
 
 \textbf{Acknowledgements:}
-	Prof. Navon, Prof. Newburgh, HongJoon
+	We would like to thank Professor Nir Navon, Professor Laura Newburgh, and HongJoon Kim from the Yale Department of Physics for help running simulations and interpreting results. We would also like to thank the Phys 382L course staff for developing the Ising Model simulation code used throughout this paper.
 	
 \bibliographystyle{unsrt} 
 \bibliography{refs}
