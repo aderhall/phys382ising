@@ -59,7 +59,7 @@ urlcolor=black,%
 \date{\today}
 
 \begin{abstract}
-
+In this paper, we simulate the 2d Ising Model on a square 100 x 100 lattice using the Metropolis-Hastings algorithm. We observe a phase transition, and calculate a critical temperature in agreement with the analytic value. We observe unexpected behavior in the correlations between nearby spin states, which converge to negative values at long distances, likely due to finite-size effects. We calculate critical exponents, which we find outside of error bars.
 \end{abstract}
 
 \maketitle
@@ -207,7 +207,7 @@ What could be causing the discrepancy around $\xi$? One possibility is that the 
 
 We also explored the possibility of some flaw in our autocorrelation algorithm, but in the end were unable to find such an issue, reaching the same results with multiple different implementations of the algorithm. The convergence to $\frac{-1}{N}$ rather than $0$ makes sense as a finite-size effect: it clearly approaches zero as $N \rightarrow \infty$. $\frac{-1}{N}$. One possible origin for such a term is the factor of $-\sigma_{(i, j)}/N$ in $\bar{\sigma}_i$. The negative autocorrelations near $T_c$, on the other hand, reflect the formations of islands with matching spins. With a lattice composed of several such islands, each lattice site is likely to share a spin with those around it, and have spin opposite to those farther away (rather than being merely uncorrelated). This anti-correlation does, however, call into question the validity of $\xi$ values calculated near $T_c$, since strong negative correlations do not resemble the exponential decay function used to fit for $\xi$. This is the most likely explanation for why our power law fit for $\xi$ produced unreliable values for $T_c$ and $\nu$.
 
-We found the following critical exponents: $\gamma = 1.7 \pm .1$ ($T_c$ as free parameter) or $\gamma = 1.67 \pm .03$ ($T_c$ fixed to analytic value), $\beta = 0.097 \pm .001$, $\nu = 0.76 \pm .04$. We also find $\alpha = 0$ by cleanly fitting a logarithmic function to $c_V$. 
+We found the following critical exponents: $\gamma = 1.7 \pm .1$ ($T_c$ as free parameter) or $\gamma = 1.67 \pm .03$ ($T_c$ fixed to analytic value), $\beta = 0.097 \pm .001$, $\nu = 0.76 \pm .04$. We also find $\alpha = 0$ by cleanly fitting a logarithmic function to $c_V$. The critical exponents calculated with fixed $T_c$ (\autoref{fig:fig5}) do not fall within uncertainty of the expected analytic values, indicating either some systematic error or underestimates in uncertainty. Similarly, they do not quite satisfy Rushbrooke's or Josephson's identities from \autoref{eq:rushbrooke} and \autoref{eq:josephson}. One source of underestimated uncertainty is likely the fixed $T_c$: our calculated $T_c$ should be uncertain, and assuming a fixed $T_c$ eliminates this information.
 
 \textbf{Acknowledgements:}
 	We would like to thank Professor Nir Navon, Professor Laura Newburgh, and HongJoon Kim from the Yale Department of Physics for help running simulations and interpreting results. We would also like to thank the Phys 382L course staff for developing the Ising Model simulation code used throughout this paper.
@@ -218,6 +218,14 @@ We found the following critical exponents: $\gamma = 1.7 \pm .1$ ($T_c$ as free 
 \appendix
 \section{Appendix A: Convergence}
 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.4\textwidth]{figs/figA1.png}
+		\caption{$\chi$ values calculated with data from a simulation of 2,000,000 analyze steps. The total 2,000,000 steps were split as evenly as possible into groups of $n_{steps}$ (x axis), and variance in M was calculated across each group. Each data point is the average variance over all such groups.}
+		\label{fig:figA1}
+	\end{center}
+\end{figure}
+
 As stated under Methods, in order to faithfully represent the underlying distribution, the Metropolis-Hastings algorithm must arrive at the typical set, and then spend enough time in the typical set to reach a representative sample. We encountered issues with both aspects of convergence while collecting data.
 
 The first issue was that at low temperatures, the simulation appeared to converge to states with large competing magnetic domains, rather than overall more aligned and thus lower-energy states. To clarify, this is not the experiment disagreeing with the theory, but rather a case of the MCMC algorithm not faithfully representing the desired distribution over a finite number of simulation steps. We solved this issue by annealing with an external magnetic field.
@@ -227,14 +235,6 @@ Annealing here refers to starting at a high temperature and magnetic field, and 
 As an example, consider a lattice initialized to be split in half down the middle, with the left half spin up, and the right half spin down. This state is significantly higher-energy than a lattice of all spin up, but reaching the uniform lattice requires passing through less-probable states. At low temperatures, this may not be possible, or might take an arbitrarily large number of steps. Similarly, with no external field, the two large domains might each grow in some places while ceding ground in others, preventing the overall lattice from reaching a more typical state.
 
 In our simulations, we anneal from $T = 4 J/k_B$ and $B = .5 J$, linearly decreasing $T$ and $B$ to the experimental temperature and zero, respectively, over 3,000 steps. We then wait another 5,000 steps of "burn-in time," to allow transients from the extra temperature and field to dissipate.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=.4\textwidth]{figs/figA1.png}
-		\caption{$\chi$ values calculated with data from a simulation of 2,000,000 analyze steps. The total 2,000,000 steps were split as evenly as possible into groups of $n_{steps}$ (x axis), and variance in M was calculated across each group. Each data point is the average variance over all such groups.}
-		\label{fig:figA1}
-	\end{center}
-\end{figure}
 
 The second issue we encountered was that we found $\chi$, and to a lesser extent $c_V$, to scale with simulation length, especially near $T_c$. This relationship is depicted in \autoref{fig:figA1}. At distance $.1 J/k_B$ from $T_c$ (top and bottom plots), we observe a region in which $\chi$ scales logarithmically with number of steps, followed by a plateau. On these plots, the plateau appears to begin near 100,000 steps. Very close to $T_c$, we do not find a plateau even within 2,000,000 steps.
 
